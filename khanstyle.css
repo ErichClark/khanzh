@@ -1,0 +1,43 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	line-height: 1.5em;
+	margin-left: 10px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+div#tableContainer {
+	display: table;
+	border-spacing: 10px;
+}
+
+section#navbar {
+    display: table-cell;
+    width: 20%;
+    padding: 15px;
+    vertical-align: top;
+	float:	left;
+}
+
+head, body {
+	font: 14px "Helvetica Neue", ;
+}
+
+header.top {
+  background-color: "#f4f4f4";
+  margin: 10px 10px 0px 10px;
+  height:           20px;
+}
+
+section#navbar {
+    display: table-cell;
+    width: 30%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+	
+.fa-leaf {
+	color: #77b05d;
+}
