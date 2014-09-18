@@ -13,7 +13,8 @@ Can you see what we're missing,
 by comparing what we just wrote to rect?
 When we just write ellipse, we're not telling it the numbers, like we did for the rectangle.
 These numbers are called parameters-
-we say that we pass parameters into functions, and they control how the function behaves.
+we say that we pass parameters into functions, 
+and they control how the function behaves.
 Without the parameters, the program doesn't know where you want your ellipse,
 or how big to make it.
 Now that error message makes more sense.
@@ -26,7 +27,8 @@ right in the middle of the canvas.
 The first question you might have is, where's the middle?
 Just to review, we have this upper left, 0 -
 - and the right is 400, and the bottom is 400 as well.
-If we want to figure out where the middle is, we'll think half of 400 over, half of 400 down- 200, 200.
+If we want to figure out where the middle is, we'll think half of 400 over, 
+half of 400 down- 200, 200.
 Let's go ahead and do that.
 We'll make our ellipse function, pass the parameters in, and make it pretty big.
 There it is!
@@ -34,14 +36,18 @@ Just for fun, let's put a rectangle there too.
 We'll say rect 200, 200 as well and a bit smaller.
 Hm, this is kind of interesting.
 What does this little experiment show us?
-Well, we can see that the 200,200 point is actually saying where to put the center of the ellipse.
-For rectangles, it's different - the 200,200 says where we should put the upper left corner of the rectangle.
+Well, we can see that the 200,200 point 
+is actually saying where to put the center of the ellipse.
+For rectangles, it's different.
+The 200,200 says where we should put the upper left corner of the rectangle.
 That's really important to remember when we're trying to position our shapes.
 Okay, now let's move on to simple lines.
 That function name is just going to be line.
 We can pass it four parameters again -
-but a line doesn't really have a size like a rectangle, so what will these numbers control?
-The first and the second parameters, just like before, say how over and down the line should start.
+but a line doesn't really have a size like a rectangle, 
+so what will these numbers control?
+The first and the second parameters, just like before, 
+say how over and down the line should start.
 The last two parameters specify how far over and how far down the line should end.
 Now that we understand how that works, let's look at something that'll seem weird at first.
 What happens if I make the rectangle start in the upper left corner?
@@ -61,7 +67,8 @@ The idea is that the line is there, it's just being hidden right now.
 Both by the ellipse and by the rectangle.
 We can just effect what shapes are drawn on top of what other shapes just by changing the order we write them.
 Now, I just want to introduce a couple of technical terms before we finish.
-Like you might have learnt in math, we can use the letter x to mean how far over we're talking about -
+Like you might have learnt in math, 
+we can use the letter x to mean how far over we're talking about -
 and the letter y to mean how far down.
 That might seem a little weird if you're not used to it,
 but it's easier to say than how far over and how far down every time.
@@ -73,7 +80,8 @@ what units have we been using this whole time?
 Are we saying 200 centimeters, 200 inches, 200 miles?
 We're using units called "pixels", and a pixel is a tiny little point on your screen.
 This canvas is 400 pixels wide -
-that's why we always say that the upper left corner is 0, and over here is 400, because it's 400 pixels.
+that's why we always say that the upper left corner is 0, 
+and over here is 400, because it's 400 pixels.
 Similarly, when we say 200, we actually mean 200 pixels, and you probably get the idea.
 Fantastic. Now you know all about the functions rect, line, and ellipse, and their parameters.
 We've covered a lot, stick with it, keep exploring, and you'll get the hang of it soon!

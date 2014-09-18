@@ -1,54 +1,71 @@
-So i've got my good friend Winston here to help us out with this one.
-And i know he already looks impossibly awesome! but i think i want to change his eye size a little bit.
-So here is where i draw his eyes, you can see we set the fill color, and then drop two ellipses.
-And if i want to make this ellipse smaller, i can change the width, but then i also want it to be round
+So I've got my good friend Winston here to help us out with this one.
+And I know he already looks impossibly awesome! 
+But I think I want to change his eye size a little bit.
+So here is where I draw his eyes, 
+you can see we set the fill color, and then drop two ellipses.
+And if I want to make this ellipse smaller, 
+I can change the width, but then I also want it to be round
 so we're going to change the height to be the same thing
-and we want the eyes to be the same size, we should change the width and the height of this eye.
-Now, now that his eyes are too small so i should change them back, and wouldn't i be great if i could
-just change one number, and have both eyes change?
+and we want the eyes to be the same size, 
+we should change the width and the height of this eye.
+Now, now that his eyes are too small so I should change them back, 
+and wouldn't I be great if I could just change one number, and have both eyes change?
 And here, is where variables come in.
-Now a variable is just like a name or a placeholder for something else.
+Now a variable is just like a name or a place holder for something else.
 I like to think of a variable as a big bucket with a name one it.
 You can put anything you want in the bucket but the name stays the same.
 We call the thing inside the bucket, the value of the variable.
-So let's start out by actually making a variable, i'm going to do it all the way up here.
-All you do is type "var" which stands for variable, "presses space" and then the name of the variable.
+So let's start out by actually making a variable, 
+I'm going to do it all the way up here.
+All you do is type "var" which stands for variable, 
+<presses spacebar> and then the name of the variable.
 Which should describe what the variable holds, so we call this one "eyeSize"
-And you can pretty much name it whatever you want, but you're not allowed to have spaces between words.
+And you can pretty much name it whatever you want, 
+but you're not allowed to have spaces between words.
 And of course, don't forget that semicolon!
-So now i've made a variable, called eyeSize, because it's going to hold the size of Winstons eyes
+So now I've made a variable, called eyeSize, 
+because it's going to hold the size of Winstons eyes
 but so far this variable doesn't have a value yet.
 To give it one, we just say eyeSize and then an equal sign, and then 20; .
-Okay, now see that equal sign? Forget whatever your math teacher taught you about it
-the equal sign does not mean equals, it means assignment.
+Okay, now see that equal sign? 
+Forget whatever your math teacher taught you about it.
+The equal sign does not mean equals, it means assignment.
 This means we're signing the value 20, to the variable eyeSize.
 In other words, we're putting the number 20 into the bucket called, eyeSize.
-And remember how in math class you can say stuff like, x = 3, and 3 = x and it all means the same thing
+And remember how in math class you can say stuff like: 
+x = 3, and 3 = x and it all means the same thing
 because duuh, they're equal.
 Well you can't do that here either.
 The thing on the left hand side of the equal sign, is always the variable.
-And the thing on the right hand side of the equal sign is always the value that you are assigning to the variable.
-A good way to help you remember which side is what, is while you're coding and talking about doing stuff like every cool programmer does.
+And the thing on the right hand side of the equal sign 
+is always the value that you are assigning to the variable.
+A good way to help you remember which side is what is: 
+while you're coding and talking about doing stuff like every cool programmer does,
 If you hit an equal sign, don't say "equals", say "gets"
 So this becomes, eyeSize gets 20.
-And now, whenver i use eyeSize in my program, the computer is going to be like: "oh yeah, that's a variable, i know what she really means is this value 20".
-So check it out, i'm just going to copy this.
+And now, whenever I use eyeSize in my program, 
+the computer is going to be like: "oh yeah, that's a variable, 
+I know what she really means is this value 20".
+So check it out, I'm just going to copy this.
 And then replace these four numbers, with my new variable eyeSize, and Voila!
-Winston's eyes are now both perfectly round and the same size, and if i want to change the value of both eyes
-or the size of both eyes, i can just change the value of this one variable.
+Winston's eyes are now both perfectly round and the same size, 
+and if I want to change the value of both eyes
+or the size of both eyes, I can just change the value of this one variable.
 "Aah that's so cool"
 Okay, couple of last notes, up here we made a new variable called eyeSize.
 And here, we gave it a value of 33, we can actually do that all in one step
 by saying var eyeSize, that's the first step, gets 33
-that's the second step, and if i delete these to lines, you can see everything still works.
+that's the second step, and if I delete these two lines, you can see everything still works.
 Also remember that the computer reads your code from top to bottom
 so the only reason it knew what eyeSize was down here.
 Was because we already defined it up here.
-If i had put it down here instead.
-Then once we got to this line of code, the computer's going to be like, "eyeSize, what the heck is eyeSize? I don't know what that is"
+If I had put it down here instead.
+Then once we got to this line of code, the computer's going to be like, 
+"eyeSize, what the heck is eyeSize? I don't know what that is"
 In fact here we get an error that says, eyeSize is not defined.
-And maybe you're thinking to yourself, yes i did define it, it's right here.
+And maybe you're thinking to yourself, yes I did define it, it's right here.
 But the computer is not smart, it doesn't get that.
 So let's just move it back up to the top.
 And you've got to always make sure that you define your variable before you try to use it.
-And now you know about variables! yaaay! :)
+And now you know about variables! 
+Yaaay! :)

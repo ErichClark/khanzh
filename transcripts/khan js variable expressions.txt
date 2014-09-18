@@ -1,34 +1,42 @@
-We're back with Winston, and now we have both a X and a Y variable for Winston's position.
+We're back with Winston, 
+and now we have both a X and a Y variable for Winston's position.
 So now we can make winston hop up and down and have a little Winston party! Wooo!
 Very nice. Let's review what this code does before we keep going.
-We have these X and Y variables at the top that store the center position of Winston's face
-Which we use in this line here, when we make the ellipse for his face.
+We have these X and Y variables at the top that store the center position of Winston's face,
+which we use in this line here when we make the ellipse for his face.
 Then, we position the eyes and the mouth relative to the center of the face
-So we subtract or add to X and Y in order to make sure that the eyes are 50 pixels away or 100 pixels away
+So we subtract or add to X and Y in order to make sure that the eyes are 50 pixels away or 100 pixels away.
 For example, the mouth is 50 pixels to the right of the center of the face
 And 40 pixels below the center of the face.
 So let's go through and see what else we can store as variables.
-To do that, I'm going to go through each line of the code and look for what we call hard coded numbers.
+To do that, I'm going to go through each line of the code 
+and look for what we call hard coded numbers.
 Those are numbers that are just straight numbers, not variables or dependent on variables.
 Let's see. In our first ellipse call here, we hvae 300 and 300 for the width and height.
 So we can make a variable for these instead, like faceSize.
-So faceSize equals 300, and then we can pass faceSize in here and right now it would pass 300 as the value.
+So faceSize equals 300, 
+and then we can pass faceSize in here and right now it would pass 300 as the value.
 Cool. Now let's keep going.
-Everything in here is using X or Y or eyeSize, but here for the mouth we once again have 150 and 150 for the width and height.
+Everything in here is using X or Y or eyeSize, 
+but here for the mouth we once again have 150 and 150 for the width and height.
 So we can make a mouth size variable, say mouthSize equals 150
-And we'll go pass mouthSize here. And it'll just pass 150 right now because that's what the variable is equal to.
+And we'll go pass mouthSize here. 
+And it'll just pass 150 right now because that's what the variable is equal to.
 Ok, so now that we've done that we can easily change the face size here
 And we can easily change the mouth size, and we can move it like that
 And we can change the eye size again
-Ok, so that's cool. But there's something I don't really like about that
-And that's when I change the face size I actually want everything else to change relative to the face size
-So if I make the face size really small like this, I want his eyes and his mouth to be really small too.
-If I make the face size half of its original size, the eyes and the mouth should also be
-half of their size. Otherwise he just looks really silly
-Because his eyes and his mouth are waay too big for his face.
+Ok, so that's cool. But there's something I don't really like about that.
+And that's when I change the face size,
+I actually want everything else to change relative to the face size
+So if I make the face size really small like this, 
+I want his eyes and his mouth to be really small too.
+If I make the face size half of its original size, 
+the eyes and the mouth should also be half of their size. 
+Otherwise he just looks really silly,
+because his eyes and his mouth are way too big for his face.
 They're not even connected anymore.
-So what we want to do is somehow make these variables, mouthSize and eyeSize
-be dependent on this variable, faceSize.
+So what we want to do is somehow make these variables, 
+mouthSize and eyeSize, be dependent on this variable, faceSize.
 So let's bring it back to what it was.
 So the way we can do this is we can make these values be based off the face size values.
 So we can say mouthSize equals faceSize over two.
@@ -40,17 +48,20 @@ it's not perfect, but it's pretty good. Oh, seven.
 There we go, that's better.
 See, if you get the fraction wrong at first, you can always fix it later.
 Just fiddle with that number until something makes sense.
-Ok, so now if we resize the face again, see how the eyes and the mouth are actually resizing along with it?
+Ok, so now if we resize the face again, 
+see how the eyes and the mouth are actually resizing along with it?
 It's pretty cool.
 But there's still something wrong.
 The eyes and the mouth are still going off the face when we go really small.
 The sizes are correct, the problem is the offset from the face.
 What's happening here is that down here when we position the ellipses
 We have X minus 50 and Y minus 50, and then X plus 100 and Y minus 60
-So even if our face size is only 50 pixels, we're still having the eye position at minus 50 pixels to the center
-Which is going to make it off the face.
+So even if our face size is only 50 pixels, 
+we're still having the eye position at minus 50 pixels to the center,
+which is going to make it off the face.
 So we need for 50 to 100 and all these numbers here
-All of these should also be fractions of the face size, so that when the face size changes the amount
+All of these should also be fractions of the face size, 
+so that when the face size changes the amount
 That the eyes are offset and the mouth is offset, those numbers should also change.
 So to show you what I mean, let's do the first eye.
 X minus 50. So X minus 50 pixels.

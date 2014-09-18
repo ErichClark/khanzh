@@ -1,58 +1,75 @@
-So we already made this super cool variable for Wintson's eyeSize, which has been really helpful because this save us alot of typing, when we want to change the size of Winston's eyes.
-Remember before we had to type the same number four times, whenever we wanted to change the size of his eyes.
+So we already made this super cool variable for Wintson's eyeSize, 
+which has been really helpful because this save us alot of typing 
+when we want to change the size of Winston's eyes.
+Remember before we had to type the same number four times, 
+whenever we wanted to change the size of his eyes.
 But can we use variables to replace numbers when they are not all the same?
-What if i wanted to move Winston over a little bit?
-We could change each of these X coordinates, but they're not all the same anyways, so i can't just replace them all with some variable.
-But wait! once I assign a number to a variable, I can use that variable exactly as if it were that number.
+What if I wanted to move Winston over a little bit?
+We could change each of these X coordinates, 
+but they're not all the same anyways, so I can't just replace them all with some variable.
+But wait! once I assign a number to a variable, 
+I can use that variable exactly as if it were that number.
 Which means, I can use variables in math expressions.
 So how about this, let's make a variable for the x position of Winston.
-Call it, "var x"
-Simple enough, okay, now let's give it the value of the x coordinate of Winston's face
-So his face is being drawn at x coordinate 200.
+Call it, "var x." Simple enough. 
+Okay, now let's give it the value of the x coordinate of Winston's face,
+so his face is being drawn at x coordinate 200.
 So we say var x gets 200 ( var x = 200; )
-Now i can replace this number with my new variable "x". And when i change the value of x it moves Winstons face.
-But not his eyes or his mouth.
-So to fix that, we're going to define the position of his eyes and his mouth, relative to the position of his face.
-So the "x" coordinates are going to be the centers of all the other ellipses, so his face is being drawn at..
-That's 200, now let's do his left eye first, so this ellipse is his left eye, and we can see that it's drawn at 150.
+Now I can replace this number with my new variable "x". 
+And when I change the value of x it moves Winstons face, but not his eyes or his mouth.
+So to fix that, we're going to define the position of his eyes and his mouth, 
+relative to the position of his face.
+So the "x" coordinates are going to be the centers of all the other ellipses, 
+so his face is being drawn at..
+That's 200, now let's do his left eye first, so this ellipse is his left eye, 
+and we can see that it's drawn at 150.
 So right here that is 150.
-And i know that 150 is 50 less than 200.
+And I know that 150 is 50 less than 200.
 So his left eye should be wherever his face is, minus 50.
 So it's going to be "x" which is the position of his face minus 50.
-And now if i change the value of this "x" coordinate, his eye moves along with his face.
+And now if I change the value of this "x" coordinate, his eye moves along with his face.
 Let's do the other ones.
-So his right eye is being drawn at 300, i can see, so this over here is 300.
-And 300 i know is 100 more than 200.
+So his right eye is being drawn at 300, I can see, so this over here is 300.
+And 300 I know is 100 more than 200.
 So his right eye should be wherever his face is plus 100.
 That's ( x + 100 )
 Now we just have his mouth, so his mouth is being drawn at 250.
 That's over here, we got 250, and 250 is 200 plus 50.
 It's going to be wherever his face is ( x + 50 )
-Now i'm going to get rid of these scribbles. Whenver i change the value of "x" it moves his whole face!
+Now I'm going to get rid of these scribbles. 
+Whenever I change the value of "x" it moves his whole face!
 Before you go, you should know a couple more things about variables.
 Once you create a variable using ( var x )
 You can assign the value to it as many times as you want.
-So after giving "x" the value of 198, i can say x gets 300, or x gets 150.
+So after giving "x" the value of 198, I can say x gets 300, or x gets 150.
 From then on, the computer would treat "x" as it were wherever we last assigned it.
 In this case 150.
 But you only need to type var once per variable.
-If over here i typed ( var x = 150; ) instead, that would have made a brand new variable named x.
-Completely destroying the old variable x in the process, so all these variables are gone in the dumpster.
+If over here I typed ( var x = 150; ) instead, 
+that would have made a brand new variable named x.
+Completely destroying the old variable x in the process, 
+so all these variables are gone in the dumpster.
 And afterwards the computer will only use the new variable.
-Sometimes you can do this kind of thing without horrible things happening to you, but i wouldn't advise it.
-For now i'm just going to do it once. ( var x = 150; )
-And now conveniently i can move all of Winston off the screen, so i can talk about my next point.
-So whenever you have a variable equals something, that variable is in a happy safe place.
-In fact to the left of the equal sign is the only place where a variable can truly feel like itself
+Sometimes you can do this kind of thing without horrible things happening to you, 
+but I wouldn't advise it.
+For now I'm just going to do it once. ( var x = 150; )
+And now conveniently I can move all of Winston off the screen, 
+so I can talk about my next point.
+So whenever you have a variable equals something, 
+that variable is in a happy safe place.
+In fact to the left of the equal sign 
+is the only place where a variable can truly feel like itself
 because that is the only place the computer will consider it to be a variable.
 Anywhere else, the computer just pretends it's a value.
 Even if we do something like this, var x gets 10 ( var x = 10; )
 And then, x gets x ( x = x; ) Wow confusing
-Well over on the left, we've got x which is a free thinking independant variable, one that can grow, can change!
+Well over on the left, 
+we've got x which is a free thinking independant variable, one that can grow, can change!
 But on the right, it's just 10.
 So sad :( But tha means we can do really useful stuff like this.
 I can say x gets x + 1 ( x = x + 1 )
-So on the left we've got our variable in a happy safe place, and on the right we have this variable which we know is basically just a number.
+So on the left we've got our variable in a happy safe place, 
+and on the right we have this variable which we know is basically just a number.
 it's just 10.
 So we can mentally replace this with x gets 10 plus 1
 Which just means x gets 11.
@@ -62,24 +79,29 @@ We're going to do var x gets 10 ( var x = 10; )
 var y gets 20 ( var y = 20; )
 x gets y ( x = y; )
 And y gets 7 ( y = 7; )
-Okay and what i want to know, is that what is the value of x?
+Okay and what I want to know, is that what is the value of x?
 Let's figure this out
 So at this sign here we're making a new variable x, and assigning it the value of 10.
 So the value of x is 10
 At this sign we're making a new variable y and giving it the value of 20.
 So we don't do anything to x, so the value of x is still 10.
-Over here we're saying x gets y. Well that's pretty confusing, but if you think about it
+Over here we're saying x gets y. Well that's pretty confusing, but if you think about it,
 we know that only one of these variables is in the happy safe place.
 And the other variable is being treated exactly as if it were a number.
-So over here we can mentally replace this "y" with it's value which is 20, and we know that the sign really means
-that "x" gets 20. So the value of "x" here is 20!
-Then over here we've got "y" in the happy safe place this time, but it's not really that confusing
-because we're just got a number on the other side.
-Here's the big question, when i changed the value of "y" here. Does that change the value of "x" up here?
-The answer, NO!!
-You've got to remember, up here "y" is just being treated like a number
-The computer is going to completely ignore that it's a variable, forget the fact that it can change
+So over here we can mentally replace this "y" with it's value which is 20, 
+and we know that the sign really means that "x" gets 20. 
+So the value of "x" here is 20!
+Then over here we've got "y" in the happy safe place this time, 
+but it's not really that confusing because we're just got a number on the other side.
+Here's the big question, when I changed the value of "y" here. 
+Does that change the value of "x" up here?
+The answer: NO!!
+You've got to remember, up here "y" is just being treated like a number.
+The computer is going to completely ignore that it's a variable, 
+forget the fact that it can change
 and it's just going to say "oh, "y" what your really mean is 20".
-So right here, we're just assigning a number to "x", we're not assigning a variable, we're signing the value of "y" which is 20.
-And that means that the value of "x" stays 20, even after we change the value of this "y" variable from the last line.
-Phew! capisce? Well now you guys are total experts on variables, congratulations !!
+So right here, we're just assigning a number to "x", 
+we're not assigning a variable, we're signing the value of "y" which is 20.
+And that means that the value of "x" stays 20, 
+even after we change the value of this "y" variable from the last line.
+Phew! Capisce? Well now you guys are total experts on variables, congratulations !!

@@ -1,4 +1,5 @@
-There are three steps you need to know about to make your drawings splendiferously colorful.
+There are three steps you need to know about 
+to make your drawings splendiferously colorful.
 Let's start by coloring the background.
 To do that, just type background and open parentheses,
 and the rest of the line will complete for you.
@@ -11,8 +12,10 @@ where 0 means there's none of that color,
 and 255 means we're maxing out on that color.
 Right now, I'm maxing out on red, and there's no green and blue.
 That's why the background is a super bright red.
-If I make the first number smaller, then there'll be less red, so it will look like a darker red.
-I can keep playing around with these numbers and seeing what kind of colors I can come up with.
+If I make the first number smaller, then there'll be less red, 
+so it will look like a darker red.
+I can keep playing around with these numbers 
+and seeing what kind of colors I can come up with.
 Or, I can use our handy dandy color picker,
 which will set all 3 numbers for me.
 Now it's important to know that what this background function is really doing,
@@ -37,18 +40,22 @@ This switches out the marker that color dude is holding,
 so that all shapes drawn after this line will be drawn with a pink marker.
 Sometimes you don't want outlines on your shapes.
 There's a function for that too!
-It's called noStroke, and for the first time, we see a function that doesn't take any parameters.
+It's called noStroke, and for the first time, 
+we see a function that doesn't take any parameters.
 We just have this empty set of parentheses, and a semi-colon,
 and now you can see our shapes have no outlines.
 We can switch out the color dude's paint bucket by calling this function, fill.
-Now, from this line of code forward, he'll fill all the shapes with this bright red color.
-Just like we have a noStroke function, we also have a noFill function, which also takes no parameters.
+Now, from this line of code forward, 
+he'll fill all the shapes with this bright red color.
+Just like we have a noStroke function, 
+we also have a noFill function, which also takes no parameters.
 This makes all of our shapes transparent - they're not filled in.
 Now let's go ahead and actually color this dude.
 We start off by drawing a triangle for his body.
 I'm going to pick a stroke color for it, set the outline, let's try a dark green.
 Now we pick a fill color. Hm, what would be nice? Maybe a lighter green.
-For his face, we don't want it to have a green outline, so I'll change stroke color for his face.
+For his face, we don't want it to have a green outline, 
+so I'll change stroke color for his face.
 I'll pick a dark tan brown-ish outline.
 Now I'll pick a different fill color.
 What's a good face color? Hmm...
@@ -58,14 +65,16 @@ I want his hands to be the same color as his face.
 So we're not going to switch out the marker or paint bucket.
 We're just going to leave stroke and fill the same,
 and move on to his mouth.
-His mouth is just this line, and lines dont have fill colors because there's nothing to fill in.
+His mouth is just this line, 
+and lines don't have fill colors because there's nothing to fill in.
 But we can change the stroke color of this line.
 Yeah, red's a pretty good color for his mouth.
 Now, his glasses frames.
 Once again, we only need to set the stroke.
 What's a good color for glasses?
 Black is pretty classic.
-For his glasses lenses, I want the rectangles to have the same outline as his frame.
+For his glasses lenses, 
+I want the rectangles to have the same outline as his frame.
 I'm not going to change the stroke, but I will give it a fill color.
 Let's make it black to match the frames.
 There we go, our dude is colored!
