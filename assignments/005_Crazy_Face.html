@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Challenge: CRAZY Face</title>
+		<link type="text/css" rel="stylesheet" href="../css/khanStyle.css">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1><span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-star fa-stack-1x fa-inverse"></i></span>Challenge: CRAZY Face</h1>
+		<p class="objective">
+			Let's make this face CRAZY! All we have to do is use what we learned about ellipses in Intro to Drawing.
+		</p>
+		
+		<h2><img src="">
+		Step 1: BIG mouth!</h2>
+		<p class ="objective">
+			This face is made of four ellipse()s, and the last one draws the mouth. Make the mouth ellipse at least 
+			120 pixels wide and 40 pixels tall! (But don't move it yet!) You can type in new numbers or click a 
+			number and use the 'number scrubber' to change them. Remember that the 2nd to last argument to ellipse() 
+			is the width, and the last argument is the height.
+		</p> 
+		<pre class="prettyprint">
+ellipse(195, 145, <span class="boxorange">     </span>, <span class="boxpink">     </span>);
+		</pre>
+		
+		<h2><img src=" ">
+		Step 2: TALL eyes!</h2>
+		<p class ="objective">
+			Make the eyes at least 60 pixels tall! Maybe even make them different sizes! (But don't move them yet!) 
+			You can type in new numbers or click a number and use the 'number scrubber' to change them. Remember 
+			that height is the last argument to ellipse().
+		</p>
+		<pre class="prettyprint">
+ellipse(160, 170, 30, <span class="boxorange">     </span>);
+ellipse(235, 170, 30, <span class="boxpink">     </span>);
+		</pre>
+		
+		<h2><img src=" ">
+		Step 3: CRAZY face!</h2>
+		<p class="objective">
+			See the first call to ellipse(), the one that currently says ellipse(200, 200, 200, 200)? This one 
+			draws the outline of the face. Move it around by changing the first two numbers and change the size 
+			by changing the last two numbers. Go CRAZY!
+		</p>
+		<pre class="prettyprint">
+ellipse(<span class="boxorange">     </span>, <span class="boxpink">     </span>, <span class="boxblue">     </span>, <span class="boxred">     </span>);
+		</pre>
+		
+		<p><i class="fa fa-home fa-2x"></i><a href="../index.html"> Return to KhanZH Home Page </a></p>
+	</body>
+</html>

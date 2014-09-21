@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Challenge: H for Hopper</title>
+		<link type="text/css" rel="stylesheet" href="../css/khanStyle.css">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1><span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-star fa-stack-1x fa-inverse"></i></span>Challenge: H is for Hopper</h1>
+		<p class="objective">
+			Hopper is our beaver that guides you through challenges. 
+			Make her happy by drawing an &#34;H&#34;!
+		</p>
+		<h2><img src="https://s3.amazonaws.com/ka-cs-challenge-images/h1.png">
+		Step 1: Start the H!</h2>
+		<p>
+			To draw an H using rectangles, we need two tall ones on the side and a short 
+			one connecting them in the middle. Start the first side by typing in exactly the code below.
+		</p> 
+		<pre class="prettyprint">
+rect(80, 70, 60, 240);
+		</pre>
+		<h2><img src="https://s3.amazonaws.com/ka-cs-challenge-images/h2.png">
+		Step 2: Now, the right side.</h2>
+		<p class ="objective">
+			For the right side of the H, we want a rectangle that's exactly the same as the left side, except for the x position. 
+			Not sure how to get started? You could just copy the same code that you wrote for step 1, and then try changing the x 
+			(the first number) until the second rectangle is on the right hand side.
+		</p>
+		<pre class="prettyprint">
+rect(80, 70, 60, 240);
+rect(<span class="boxorange">     </span>, 70, 60, 240);
+		</pre>
+		<h2><img src="https://s3.amazonaws.com/ka-cs-challenge-images/h3.png">
+		Step 3: Connect the sides!</h2>
+		<p class="objective">
+			Now add a rect() command after the first two rect()s. The final rect() command will connect the sides with a 
+			rectangle in the middle, completing our 'H'. Not sure what numbers to use for this rectangle? Try drawing it 
+			on a sheet of paper, or just make up random numbers at first, and change them after until it looks like a middle.
+		</p>
+		<pre class="prettyprint">
+rect(80, 70, 60, 240);
+rect(<span class="boxorange">     </span>, 70, 60, 240);
+rect(140, 170, <span class="boxpink">     </span>, <span class="boxblue">     </span>);
+		</pre>
+		<p><i class="fa fa-home fa-2x"></i><a href="../index.html"> Return to KhanZH Home Page </a></p>
+	</body>
+</html>
