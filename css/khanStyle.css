@@ -97,28 +97,13 @@ table {
 	font-weight: bold;
 }
 
-.fa-star {
+.fa-star, .fa-leaf, .fa-circle,  .fa-play-circle-o, .fa-rocket, .fa-home, .fa-file-text-o,
+.fa-star-o  {
 	color: #77b05d;
 }
 
-.fa-leaf {
-	color: #77b05d;
-}
-
-.fa-circle {
-	color: #77b05d;
-}
-
-.fa-play-circle-o {
-	color: #77b05d;
-}
-
-.fa-rocket {
-	color: #77b05d;
-}
-
-.fa-home {
-	color:	blue;
+.fa-life-ring  {
+	color: orange;
 }
 
 a:link {
