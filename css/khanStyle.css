@@ -65,6 +65,11 @@ img {
 	outline-color:		#8e8eca;
 }
 
+.boxchange {
+	background-color:	lightgreen;
+	
+}
+
 .boxred {
 	background-color: 	#fccccc;
 	outline-width:		1px;
@@ -73,11 +78,20 @@ img {
 }
 
 table {
-  margin-left:      20px;
-  margin-right:     20px;
-  border:           thin solid black;
+  margin-left:      10px;
+  margin-right:     10px;
+  margin-left:		10px;
+  border:           none;
   caption-side:     bottom;
   border-collapse:  collapse;
+  text-align:		top;
+  
+}
+
+table td {
+  width:			300px;
+  vertical-align:	top;
+  padding:			10px;
 }
 
 .objective, .hints {
@@ -107,13 +121,11 @@ table {
 }
 
 a:link {
-	color: DimGray;
-	text-decoration: none;
+	color: DimGray;	
 }
 
 a:visited {
 	color: green;
-	text-decoration: none;
 }
 
 pre.prettyprint{

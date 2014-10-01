@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Challenge: Tasty Tomato</title>
+		<link type="text/css" rel="stylesheet" href="../../css/khanStyle.css">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1><i class="fa fa-rocket fa-3x"></i> Challenge: Tasty Tomato</h1>
+		<p class="objective">
+			Hungry? Eat the tomato!
+		</p>
+		
+		<h2>Step 1: Bigger bite!</h2>
+		<p class ="objective">
+			Before we make this program respond to mouse interaction, let's make a little change. 
+			See the bite in the tomato? It's tiny now, make it bigger! <br><br>
+			Make sure you change both the width *and* the height of the bite.
+		</p> 
+		<pre class="prettyprint">
+ellipse(75, 200, <span class="boxorange">     </span>, <span class="boxpink">     </span>);
+		</pre>
+		
+		<h2>Step 2: Prepare to eat!</h2>
+		<p class ="objective">
+			Right now, there's just one bite in this tomato - but we want to be able to eat it all! 
+			We can do that by drawing a new bite everytime the user moves the mouse. The first step 
+			is to create a draw() function, and move the bite drawing code into it.
+		</p>
+		<pre class="prettyprint">
+<span class="boxchange">var draw = function() { </span>
+	// Take a bite out of the tomato!
+	fill(255, 255, 255);
+ellipse(75, 200, <span class="boxorange">     </span>, <span class="boxpink">     </span>);
+<span class="boxchange">}; </span>
+		</pre>
+		
+		<h2>Step 3: Eat it!</h2>
+		<p class="objective">
+			Now, to make it so that we can make more bites when we move the mouse, you need to change 
+			the x and the y coordinates of the bite to be based on mouseX and mouseY instead. To check 
+			that it works, just move your mouse!
+		</p>
+		<pre class="prettyprint">
+var draw = function() {
+	// Take a bite out of the tomato!
+	fill(255, 255, 255);
+	ellipse(<span class="boxchange">mouseX</span>, <span class="boxchange">mouseY</span>, <span class="boxorange">     </span>, <span class="boxpink">     </span>);
+}; 
+		</pre>
+		
+		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page </a></p>
+	</body>
+</html>
