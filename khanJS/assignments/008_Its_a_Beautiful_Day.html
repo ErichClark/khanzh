@@ -7,66 +7,74 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: It's a Beautiful Day</h1>
+		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: It's a Beautiful Day <br>任務：美好的一天</h1>
 		<p class="objective">
 			Take an ugly black and white drawing and turn it into a beautiful day! Use fill and paint with 
-			all the colors of the wind!
+			all the colors of the wind!<br>
+			用醜醜的黑色和白色圖形，讓今天變成美好的一天！用填滿和著色搭配各種不同顏色的風吧！
 		</p>
 		
-		<h2>Step 1: Color the sky!</h2>
+		<h2>Step 1: Color the sky!<br>第一步：彩繪天空！</h2>
 		<p class ="objective">
-			Start off by using the background command to color the sky! Use any color you want, but maybe blue?
+			Start off by using the background command to color the sky! Use any color you want, but maybe blue?<br>
+			從運用背景指令彩繪天空開始吧！你可以用任何想用的顏色，先用藍色如何？
 		</p> 
 		<pre class="prettyprint">
 background(___, ___, ___);
 		</pre>
 		
-		<h2>Step 2: Clouds don't have outlines!</h2>
+		<h2>Step 2: Clouds don't have outlines!<br>
+		第二步：雲沒有輪廓！</h2>
 		<p class ="objective">
-			Let's get rid of the ugly outlines on 
-			those shapes! Writing the command noStroke() 
-			will tell the program to no longer draw the outlines.<br>
-			Remember, noStroke() only affects shapes drawn afterwards. 
-			Can you move noStroke() so that no shape has an outline? 
-			The best place is probably at the very top of your program, 
-			since we don't want outlines around *anything*.
+			Let's get rid of the ugly outlines on those shapes! Writing the command noStroke() will tell the program to no longer draw the outlines.<br>
+			刪掉那些形狀的醜醜輪廓吧！寫出指令 noStroke() 就能讓程式知道不要再畫出輪廓。<br>
+			Remember, noStroke() only affects shapes drawn afterwards. Can you move noStroke() so that no shape has an outline? The best place is probably at the very top of your program, since we don't want outlines around *anything*. <br>
+			記住，noStroke() 只會影響你之後畫的東西。能不能移動 noStroke() 讓所有形狀都沒有輪廓呢？既然我們希望 *所有東西* 都沒有輪廓，那麼最棒的位置大概就是在程式的最頂端了。
 		</p>
 		<pre class="prettyprint">
 noStroke();
 		</pre>
 		
-		<h2>Step 3: Color the grass!</h2>
+		<h2>Step 3: Color the grass!<br>第三步：為小草著色！</h2>
 		<p class="objective">
 			Add a fill command to make the grass green. Remember that you'll 
 			need the fill command to be *before* the command that draws the grass. 
-			Don't worry if other shapes get colored too, we'll fix them later!
+			Don't worry if other shapes get colored too, we'll fix them later!<br>
+			新增一個填滿指令，讓小草變綠色。記得，你必須在畫小草 *之前*，就加上填滿指令。如果別的形狀也變成了綠色，別擔心，之後再修改就可以了。
 		</p>
 		<pre class="prettyprint">
 fill(___, ___, ___);
 		</pre>
 		
-		<h2>Step 4: The sun should be a different color than the grass!</h2>
+		<h2>Step 4: The sun should be a different color than the grass!<br>
+		第四步：太陽應該要和小草有不同的顏色！</h2>
 		<p class="objective">
 			Now, add another fill() command to make the sun its own color, 
 			maybe a bright orange or yellow. Don't worry if it colors the clouds, 
-			too, those are next! <br>You'll need another call to fill to make the sun a different color!
+			too, those are next! <br>
+			現在，新增另一個 fill() 指令，讓太陽有自己的顏色，可以試試亮橘色或黃色。如果雲也上色了，別擔心，下一步再處理！<br>
+			You'll need another call to fill to make the sun a different color!<br>
+			你還需要另一個填滿指令，讓太陽有不一樣的顏色！
 		</p>
 		<pre class="prettyprint">
 fill(___, ___, ___);
 		</pre>
 		
-		<h2>Step 5: Uh oh, what about the clouds!?</h2>
+		<h2>Step 5: Uh oh, what about the clouds!?<br>
+		第五步：喔噢！雲該怎麼辦！？</h2>
 		<p class="objective">
 			How about making the clouds a nice color like white or gray 
 			or black? You should make all three parts of the cloud *one 
 			color*, not three different colors, so you only need to add 
-			one more fill() command.<br>You'll need another call to fill 
-			to make the clouds a different color!
+			one more fill() command.<br>
+			幫雲上點好看的顏色，像是白色、灰色或黑色，好嗎？記得雲的三個部分都需要 *一個顏色*，而不是不同的三種顏色，所以你只需要再加上一個 fill() 指令。<br>
+			You'll need another call to fill to make the clouds a different color!<br>
+			你需要另一個填滿指令，讓雲有不一樣的顏色！
 		</p>
 		<pre class="prettyprint">
 fill(___, ___, ___);
 		</pre>
 		
-		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page </a></p>
+		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page 回到可汗學院中文首頁</a></p>
 	</body>
 </html>
