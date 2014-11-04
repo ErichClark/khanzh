@@ -7,30 +7,37 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-file-text-o fa-3x"></i> Review: Variables</h1>
+		<h1><i class="fa fa-file-text-o fa-3x"></i> Review: Variables<br>
+		 復習：變數</h1>
 		<p class="objective">
-			<em>Here's what we covered in this tutorial on variables.</em> <br> <br>
+			<em>Here's what we covered in this tutorial on variables.<br>
+			以下是我們在教學中已涵蓋的變數知識 </em> <br> <br>
 			A variable is a way to store values. To use a variable, we must both "declare" it, to let the program 
 			know about the variable, and then we must "assign" it, to let the program know what value we are storing 
-			in the variable. <br><br>
-			Here's how we would declare a variable named "xPos":
+			in the variable. <br>
+			變數是一種用來存值的方法。要使用變數，我們必先「宣告」它，讓程式知道變數的存在，接著我們必給它「指派」，讓程式知道我們要存什麽值於變數裏。 <br><br>
+			Here's how we would declare a variable named "xPos":<br>
+			這是如何去宣告一個叫「xPos」的變數：
 		</p>
 		<pre class="prettyprint">
 var xPos; </pre>
 		<p class ="objective">
-			Now, we can assign it to hold the value 10:
+			Now, we can assign it to hold the value 10:<br>
+			現在，我們可以指派它來儲存10這個值：
 		</p> 
 		<pre class="prettyprint">
 xPos = 10;
 		</pre>
 
 		<p class ="objective">
-			If we want to (and we often do!), we can declare and assign it in one statement:
+			If we want to (and we often do!), we can declare and assign it in one statement:<br>
+			如果我們想要（而我們經常會想要！），我們可以在一個陳述句中同時宣告和指派它：
 		</p>
 		<pre class="prettyprint">
 var xPos = 10;	</pre>
 		<p class="objective">
-			If, for some reason, we want to change the value of a variable later, we can "re-assign" it:
+			If, for some reason, we want to change the value of a variable later, we can "re-assign" it:<br>
+			如果，因為某些原因，我們隨後想改變數的值，可以將它「重新指派」：
 		</p>
 		<pre class="prettyprint">
 var xPos = 10;
@@ -38,28 +45,37 @@ var xPos = 10;
 xPos = 20;
 		</pre>
 		<p class="objective">
-			We'll soon see why re-assignment can be useful.
+			We'll soon see why re-assignment can be useful.<br>
+			很快我們便會明白重新指派的有用之處。
 		</p>
 		
 		<p class ="objective">
-			A variable can store the result of any expression, so a variable's value can be computed based on the values of other variables:
+			A variable can store the result of any expression, so a variable's value can be computed based on the values of other variables:<br>
+			變數可以儲存任何運算式的結果，所以變數的值可以依據其它變數的值而被計算出來：
 		</p>
 		<pre class="prettyprint">
 var bodySize = 300;
 var headSize = bodySize/3; // 100
 var noseSize = headSize/2; // 50	</pre>
 		<p class ="objective">
-			How can we pick names for our variables? For variables in JavaScript, follow these rules:
+			How can we pick names for our variables? For variables in JavaScript, follow these rules:<br>
+			該如何替我們的變數命名呢？JavaScript的變數, 需要遵守下列規則：
 		</p>
 		<ul>
-			<li> Variable names should begin with letters, "$" or "_" and only contain letters, numbers, "$" and "_" </li>
-			<li> Variable names are "case sensitive" - that means that "xPos" is different from "xpos", so make sure you are consistent with how you type it. </li>
-			<li> Variable names can't be the same as existing variable names, and there are a lot in our ProcessingJS programming environment. If you ever see an error pop up like "Read only!", try changing your variable name. </li>
-			<li> Variable names should be clear and meaningful - for example, instead of "ts", use "toothSize". </li>
-			<li> Variable names should use "camel case" for multiple words, like "toothSize" instead of "toothsize" or "tooth_size". </li>
+			<li> Variable names should begin with letters, "$" or "_" and only contain letters, numbers, "$" and "_" <br>
+				名稱該以字母、「$」或 「_」 起頭，而其餘部分只含字母、數字、「$」 和 「_」。</li>
+			<li> Variable names are "case sensitive" - that means that "xPos" is different from "xpos", so make sure you are consistent with how you type it. <br>
+				變數名稱是「區分大小寫」的——也就是說「xPos」和「xpos」是不一樣的，務必保持寫法一致。</li>
+			<li> Variable names can't be the same as existing variable names, and there are a lot in our ProcessingJS programming environment. If you ever see an error pop up like "Read only!", try changing your variable name. <br>
+				變數名稱不能和已存的變數名稱一樣，在ProcessingJS程式環境裡已經存有很多個變數，所以如果你看到錯誤訊息冒出「Read only!」，試改變變數名稱。</li>
+			<li> Variable names should be clear and meaningful - for example, instead of "ts", use "toothSize". <br>
+				變數名稱要清楚且有意義——舉例來說，寫「toothSize」而非「ts」。</li>
+			<li> Variable names should use "camel case" for multiple words, like "toothSize" instead of "toothsize" or "tooth_size". <br>
+				超過兩個英文字的變數名稱該用「駝峰式大小寫」格式來命名，像是「toothSize」而非「toothsize」或「tooth_size」。</li>
 		</ul>
 		<p class ="objective">
-			We'll use variables a lot when we learn animation in the next tutorial, so ask questions in the forum if you don't understand something about them.
+			We'll use variables a lot when we learn animation in the next tutorial, so ask questions in the forum if you don't understand something about them.<br>
+				我們在下一個教學中學做動畫時將會經常用到變數，如有任何對於變數不清楚的地方請到論壇發問。
 		</p>
 		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page </a></p>
 	</body>

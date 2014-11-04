@@ -7,44 +7,54 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Brown Bear Eyes</h1>
+		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Brown Bear Eyes<br>
+			挑戰：棕熊眼睛</h1>
 		<p class="objective">
-			Use variables to control the size of this bear's eyes.
+			Use variables to control the size of this bear's eyes.<br>
+			運用變數來控制這棕熊眼睛的大小。
 		</p>
 		
-		<h2>Step 1: Variable for pupils</h2>
+		<h2>Step 1: Variable for pupils<br>
+		第一步： 瞳孔的變數</h2>
 		<p class ="objective">
 			What a cute bear! We're going to use him to get a little practice with variables. First, notice that 
 			the radius of the eyes is stored in a variable called eyeRadius, which has a value of 20. However, 
 			the pupil radius (which is equal to eyeRadius/2) is computed inside each call to ellipse() for the 
 			pupils. Create a new variable to store the size of the pupils (eyeRadius/2), and then use that variable 
-			as the last two arguments to the ellipse() calls for the pupils.
+			as the last two arguments to the ellipse() calls for the pupils.,br>
+			多可愛的熊啊！我們將利用它來練習一下變數。首先，注意眼睛的半徑正存於稱為eyeRadius的變數中，數值為20。
+			然而，瞳孔的半徑（相等於eyeRadius/2）在每次呼叫瞳孔的ellipse()時會被計算一次。造一個新變數來儲存瞳孔的大小（eyeRadius/2），然後用那變數當作瞳孔的ellipse()呼叫的最後兩個引數。
 		</p> 
 		<pre class="prettyprint">
 var <span class="boxorange">     </span> = eyeRadius/2;</pre>
 		<p class ="objective">
 			After you create the variable: Great--you've created the variable! Now you need to pass only that variable 
 			into the last two arguments in the two calls to ellipse() for the pupils. Remember that the last two arguments 
-			for ellipse() are the width and height of the ellipse.
+			for ellipse() are the width and height of the ellipse.<br>
+			當你造好那變數後：很好——你經已造了那變數！現在你需要將那變數遞進去那兩個瞳孔的ellipse()呼叫裏的最後兩個引數。記住ellipse()的最後兩個引數就是橢圓形的寬度和高度。
 		</p>
 		<pre class="prettyprint">
 ellipse(centerX-30, centerY-20, <span class="boxorange">     </span>, <span class="boxorange">     </span>);
 ellipse(centerX+30, centerY-20, <span class="boxorange">     </span>, <span class="boxorange">     </span>); 
 		</pre>
 		
-		<h2>Step 2: Variable for y coordinate of eyes</h2>
+		<h2>Step 2: Variable for y coordinate of eyes<br>
+		第二步：眼睛y座標的變數</h2>
 		<p class ="objective">
 			Now, notice that both eyes and both pupils have the same y coordinate: (centerY-20). However, this value is 
 			also computed every time it is used, instead of being stored in a variable. Create a new variable to store 
 			the expression (centerY-20), and then use that as the second argument (the y coordinate) in the two calls 
-			to ellipse() for the eyes AND the two calls to ellipse() for the pupils.
+			to ellipse() for the eyes AND the two calls to ellipse() for the pupils. <br>
+			現在，注意倆眼睛及倆瞳孔有著相同的y座標：centerY-20。然而，這個值在每一次被使用時也會被重新計算，而不是被儲存在一個變數中。
+			造一個新變數來儲存centerY-20這個表示式，然後用它作為第二個引數（y座標）在那兩個眼睛的ellipse()呼叫以及那兩個瞳孔的ellipse()呼叫裏。
 		</p>
 		<pre class="prettyprint">
 var <span class="boxorange">     </span> = centerY-20; </pre>
 		<p class ="objective">
 			After you create the variable: Great--you've created the variable! Now you need to pass only that variable as the second argument in the two 
 			calls to ellipse() for the eyes and the two calls to ellipse() for the pupils. Remember that the last two 
-			arguments for ellipse() are the width and height of the ellipse.
+			arguments for ellipse() are the width and height of the ellipse.<br>
+			當你造好那變數後：很好——你經已造了那變數！現在你需要將那變數遞進去那兩個瞳孔的ellipse()呼叫及那兩個瞳孔的ellipse()呼叫裏的第二個引數。記住ellipse()的最後兩個引數就是橢圓形的寬度和高度。
 		</p>
 		<pre class="prettyprint">
 // eyes
@@ -55,11 +65,13 @@ ellipse(centerX-30, <span class="boxorange">     </span>, <span class="boxpink">
 ellipse(centerX+30, <span class="boxorange">     </span>, <span class="boxpink">     </span>, <span class="boxpink">     </span>);
 		</pre>
 		
-		<h2>Step 3: Play time!</h2>
+		<h2>Step 3: Play time!<br>
+		第三步：玩樂時間！</h2>
 		<p class="objective">
 			Now that you've done the hard work, you can play around with the size of the pupils and the y coordinates of the eyes, 
 			just by changing the values stored in the two new variables you have created. Feel free to change the size of the eyes 
-			via eyeRadius as well. Remember there's no need to edit any calls to ellipse()!
+			via eyeRadius as well. Remember there's no need to edit any calls to ellipse()!<br>
+			現在你已將苦工完成，你可以試試調整瞳孔大小及眼睛的y座標，只需改變存在你所造的兩個新變數中的數值就可以。也可以透過eyeRadius隨意改變眼睛大小。記住不需要編輯任何ellipse()呼叫喔！
 		</p>
 		<pre class="prettyprint">
 var eyeRadius = ___;
