@@ -7,37 +7,41 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i> Challenge: Parting Clouds</h1>
+		<h1><i class="fa fa-star-o fa-3x"></i> Challenge: Parting Clouds<br>挑戰：散開的雲</h1>
 		<p class="objective">
-			Animate clouds moving away from a growing sun!
+			Animate clouds moving away from a growing sun!<br>
+			浮雲散離增大中的太陽的動畫製作！
 		</p>
 		
-		<h2>Step 1: Cover the sun!</h2>
+		<h2>Step 1: Cover the sun!<br>蓋着太陽！</h2>
 		<p class ="objective">
 			Let's start off with the clouds covering the sun, so that we can animate them moving away from it. 
 			Change the leftX and rightX variables so that the clouds cover the sun, but still let a little sun 
-			peek out.
+			peek out.<br>
+			一開始先把雲蓋着太陽，這讓我們可以利用動畫來使它們離太陽而去。改變變數 leftX 和 rightX 讓雲蓋到太陽，卻又露出一點點的太陽。
 		</p> 
 		<pre class="prettyprint">
 var leftX = ___;
 var rightX = ___;
 		</pre>
 		
-		<h2>Step 2: Part the clouds!</h2>
+		<h2>Step 2: Part the clouds!<br>令雲散開！</h2>
 		<p class ="objective">
 			The clouds are hiding the sun now, and we want to animate them moving in opposite directions away 
 			from it. Make it so that the left cloud moves 1 pixel to the left in each frame, and the right cloud 
-			moves 1 pixel to the right. Remember you can click Restart to re-run your program.
+			moves 1 pixel to the right. Remember you can click Restart to re-run your program.<br>
+			現在太陽藏在雲裡，我們做個動畫使它們向兩邊離開。左邊的雲在每一個影格中向左移動 1 像素，而右邊的雲則於每一個影格向右移動 1 像素。記得你能按 Restart 重新啓動你的程式。
 		</p>
 		<pre class="prettyprint">
 ___ -= ___;
 ___ += ___;
 		</pre>
 		
-		<h2>Step 3: Grow the sun!</h2>
+		<h2>Step 3: Grow the sun!<br>令太陽增大！</h2>
 		<p class="objective">
 			Let's make it so the clouds are running away from a sun that's getting bigger and BIGGER. 
-			Increment the sun radius by 2 pixels in each frame.
+			Increment the sun radius by 2 pixels in each frame.<br>
+			就讓我們的雲跑離一個不停增大再增大的太陽吧。將太陽的半徑於每一個影格中增量 2 像素。
 		</p>
 		<pre class="prettyprint">
 ___ += ___;

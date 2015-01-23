@@ -7,35 +7,37 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i> Challenge: Exploding Sun</h1>
+		<h1><i class="fa fa-star-o fa-3x"></i> Challenge: Exploding Sun<br>挑戰：爆炸的太陽</h1>
 		<p class="objective">
-			Make the sun get bigger and BIGGER!
+			Make the sun get bigger and BIGGER!<br>令太陽變大再變大！
 		</p>
 		
-		<h2>Step 1: Prepare to animate!</h2>
+		<h2>Step 1: Prepare to animate!<br>預備做動畫！</h2>
 		<p class ="objective">
 			Right now, this program just draws a sun that never moves (boring!). To prepare to animate it, make a 
-			draw() function and move all the shape drawing commands inside of it.
+			draw() function and move all the shape drawing commands inside of it.<br>
+			現在，這程式只會畫出一個永遠不動的太陽。無聊！要準備製作動畫，先寫一個 draw() 函數，然後將所有繪圖指令都搬進函數裏。
 		</p> 
 		<pre class="prettyprint">
 var sunSize = 30;
 
 <span class="boxchange">var draw = function() { </span>
-	// The sun
+	// The sun 太陽
 	fill(255, 204, 0);
 	ellipse(200, 298, sunSize, sunSize;
 	
-	// The land
+	// The land 土
 	fill(76, 168, 67);
 	rect(0, 300, 400, 100);
 <span class="boxchange">}; </span>
 		</pre>
 		
-		<h2>Step 2: Explode the sun!</h2>
+		<h2>Step 2: Explode the sun!<br>令太陽爆炸！</h2>
 		<p class ="objective">
 			Now, to make the sun get bigger, add to the sunSize variable inside the draw() function. 
 			Make it get bigger by 1 pixel each time it's drawn, by adding 1 to the value of sunSize. 
-			Remember you can press 'Restart' to restart the animation.
+			Remember you can press 'Restart' to restart the animation.<br>
+			現在，去把太陽增大，將 draw() 函數裏的變數 sunSize 增量。把 sunSize 的值加 1，使它每畫一次增大 1 像素。記得你可以按 Restart 來重播動畫。
 		</p>
 		<pre class="prettyprint">
 var sunSize = 30;
@@ -43,11 +45,11 @@ var sunSize = 30;
 var draw = function() { 
 	<span class="boxchange">___ = ___ + 1; </span>
 	
-	// The sun
+	// The sun 太陽
 	fill(255, 204, 0);
 	ellipse(200, 298, sunSize, sunSize;
 	
-	// The land
+	// The land 土
 	fill(76, 168, 67);
 	rect(0, 300, 400, 100);
 }; 

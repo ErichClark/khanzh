@@ -7,26 +7,28 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-rocket fa-3x"></i> Challenge: Tasty Tomato</h1>
+		<h1><i class="fa fa-rocket fa-3x"></i> Challenge: Tasty Tomato<br>挑戰：美味番茄</h1>
 		<p class="objective">
-			Hungry? Eat the tomato!
+			Hungry? Eat the tomato!<br>餓嗎？吃個蕃茄吧！
 		</p>
 		
-		<h2>Step 1: Bigger bite!</h2>
+		<h2>Step 1: Bigger bite!<br>咬更大的一口！</h2>
 		<p class ="objective">
-			Before we make this program respond to mouse interaction, let's make a little change. 
-			See the bite in the tomato? It's tiny now, make it bigger! <br><br>
-			Make sure you change both the width *and* the height of the bite.
+			Before we make this program respond to mouse interaction, let's make a little change. See the bite in the tomato? It's tiny now, make it bigger!<br>
+			我們讓程式回應滑鼠互動前先做一些小改變。看見蕃茄被咬了那一口嗎？它現在很小，把它弄大一點吧！<br><br>
+			Make sure you change both the width *and* the height of the bite.<br>
+			確定你改了咬口的寬度和高度。
 		</p> 
 		<pre class="prettyprint">
 ellipse(75, 200, <span class="boxorange">     </span>, <span class="boxpink">     </span>);
 		</pre>
 		
-		<h2>Step 2: Prepare to eat!</h2>
+		<h2>Step 2: Prepare to eat!<br>準備吃！</h2>
 		<p class ="objective">
 			Right now, there's just one bite in this tomato - but we want to be able to eat it all! 
-			We can do that by drawing a new bite everytime the user moves the mouse. The first step 
-			is to create a draw() function, and move the bite drawing code into it.
+			We can do that by drawing a new bite every time the user moves the mouse. The first step 
+			is to create a draw() function, and move the bite drawing code into it.<br>
+			目前爲止，蕃茄只被咬了一口——但我們希望能把它整個吃掉！想吃掉全部，我們可以在使用者每次移動滑鼠時畫一口。第一步是寫一個 draw 函數，然後咬蕃茄的繪圖碼搬進函數裏。
 		</p>
 		<pre class="prettyprint">
 <span class="boxchange">var draw = function() { </span>
@@ -36,11 +38,12 @@ ellipse(75, 200, <span class="boxorange">     </span>, <span class="boxpink">   
 <span class="boxchange">}; </span>
 		</pre>
 		
-		<h2>Step 3: Eat it!</h2>
+		<h2>Step 3: Eat it!<br>吃了它！</h2>
 		<p class="objective">
 			Now, to make it so that we can make more bites when we move the mouse, you need to change 
 			the x and the y coordinates of the bite to be based on mouseX and mouseY instead. To check 
-			that it works, just move your mouse!
+			that it works, just move your mouse!<br>
+			現在，我們更希望能夠在滑鼠移動時多做出幾個咬口，你需要改變咬口的 x 與 y 座標令它們依循 mouseX 與 mouseY。要查看程式碼是否正確，動動你的滑鼠就知道了！
 		</p>
 		<pre class="prettyprint">
 var draw = function() {
