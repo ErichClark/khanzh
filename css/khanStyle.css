@@ -63,6 +63,13 @@ img {
 	outline-color:		#8e8eca;
 }
 
+.boxred {
+	background-color: 	#fdcdcd;
+	outline-width:		1px;
+	outline-style:		dotted;
+	outline-color:		#8e8eca;
+}
+
 .boxchange {
 	background-color:	lightgreen;
 	
