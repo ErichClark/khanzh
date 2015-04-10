@@ -7,66 +7,93 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-file-text-o fa-3x"></i> Review: Text and Strings</h1>
-		<p class="objective">
-			<em>Here's a review of what we covered in this tutorial on text.</em>
-		</p> 
+		<h1><i class="fa fa-file-text-o fa-3x"></i> Review: Text and Strings<br>
+				回顾：文本和字符串
+		</h1>
+		<p class="objective"><em>
+			Here's a review of what we covered in this tutorial on text.<br>
+			接下来我们将以文本形式对本教程涉及的内容进行回顾。
+		</em></p>
+		
 		<p class="objective">
 			Before this tutorial, we were using number values for most things- passing numbers into functions, 
 			storing numbers in variables, etc. As you've now seen, we can also use text values, and we call 
-			those <em>strings</em> in JavaScript - think of them as a "string" of letters.
+			those <em>strings</em> in JavaScript - think of them as a "string" of letters.<br>
+			在本次辅导课之前，我们已学会用数值来表示大多数事情-将数值代入函数，并将它存储在变量中，等等。就像你们现在看到的一样，我们同样也可以使用在脚本语言中被称为字符串的文字值-你可以将它们想象成一串串的字母。
 		</p>
+		
 		<p class="objective">
-			To create a string, we surround text in matching quotation marks:
+			To create a string, we surround text in matching quotation marks: <br>
+			在围绕文本中键入如下文字：“Hello World！”别忘了带上引号。这样就可以创建一个字符串了。
 		</p>
+		
 		<pre class="prettyprint">
 "Hello World!"
 		</pre>
+		
 		<p class="objective">
 			We have to actually do something with that string - like pass it to the 
-			<a href="https://www.khanacademy.org/cs/texttext-x-y/937624625">text()</a> command:
+			<a href="https://www.khanacademy.org/cs/texttext-x-y/937624625">text()</a> command:<br>
+			我们需要在该字符串上进行操作-比如将该字符串放到<a href="https://www.khanacademy.org/cs/texttext-x-y/937624625">text()</a>命令中：
 		</p>
+		
 		<pre class="prettyprint">
 text("Hello World!", 100, 100);
 		</pre>
+		
 		<p class="objective">
-				We could also store it in a variable, and then pass that variable into the text() command:
+				We could also store it in a variable, and then pass that variable into the text() command:<br>
+				我们也可以将它存储在变量中，然后将该变量放入这个text()命令中。
 		</p>
+		
 		<pre class="prettyprint">
 var myGreeting = "Hello World!";
 text(myGreeting, 100, 100);
 		</pre>
+		
 		<p class="objective">
-			Note that we can also use single quotation marks:
+			Note that we can also use single quotation marks:<br>
+			注意：我们也可以使用单一引号：
 		</p>
+		
 		<pre class="prettyprint">
 var myGreeting = 'Hello World!';
 		</pre>
 		<p class="objective">
-			But we *can't* mix and match quotation marks - that's an error! Pick either single or double marks, and stick with it.
+			But we *can't* mix and match quotation marks - that's an error! Pick either single or double marks, and stick with it.<br>
+			但我们*绝不能*混淆搭配引号——这是错误的！确保只选择单或双引号，并且坚持使用它。
 		</p>
+		
 		<pre class="prettyprint">
-var myGreeting = 'Hello World!"; // oh noes!
+var myGreeting = 'Hello World!"; // oh noes!   啊不要!
 		</pre>
+		
 		<p class="objective">
-			Just like we can manipulate number values, we can also manipulate strings, like if we want to add one string to another string:
+			Just like we can manipulate number values, we can also manipulate strings, like if we want to add one string to another string:<br>
+			就像我们能处理数值一样，我们也能处理字符串，如下面这个将一条字符串加入到另一条字符串中的例子：
 		</p>
+		
 		<pre class="prettyprint">
 var myGreeting = "Alo";
 var myName = "Winston";
 var sayHello = myGreeting + ", " + myName + "!"; // Alo, Winston!
 		</pre>
+		
 		<p class="objective">
-			We can also combine strings with number values, like so:
+			We can also combine strings with number values, like so:<br>
+			我们也能将字符串和数值结合起来，像这样：
 		</p>
+		
 		<pre class="prettyprint">
 var xPos = 10;
 var yPos = 20;
-var label = "The coordinates are " + xPos + ", " + yPos;
+var label = "The coordinates are " + xPos + ", " + yPos; // "坐标如下："
 		</pre>		
+		
 		<p class="objective">
 			We also saw that we can use different commands to change the text size and text font when we display string using the text() command. 
-			You can read more about those in the <a href="https://www.khanacademy.org/cs/program-docs#cs-documentation-text">text section</a> of our documentation.
+			You can read more about those in the <a href="https://www.khanacademy.org/cs/program-docs#cs-documentation-text">text section</a> of our documentation.<br>
+			我们也能看到，当我们使用 <a href="https://www.khanacademy.org/cs/program-docs#cs-documentation-text">text() </a> 命令显示字符串时，我们也能使用不同命令更改文本大小与字体。你可以在我们文件的文本部分了解更多内容。
 		</p>
 		
 		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page </a></p>
