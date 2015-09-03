@@ -8,33 +8,34 @@
 	</head>
 	<body>
 		<h1><i class="fa fa-file-text-o fa-3x"></i> Review: Text and Strings<br>
-				回顾：文本和字符串
+				復習：文字與字串
 		</h1>
 		<p class="objective"><em>
 			Here's a review of what we covered in this tutorial on text.<br>
-			接下来我们将以文本形式对本教程涉及的内容进行回顾。
+			現在我們將復習這個教學指導裡提及的內容。
 		</em></p>
 		
 		<p class="objective">
 			Before this tutorial, we were using number values for most things- passing numbers into functions, 
 			storing numbers in variables, etc. As you've now seen, we can also use text values, and we call 
 			those <em>strings</em> in JavaScript - think of them as a "string" of letters.<br>
-			在本次辅导课之前，我们已学会用数值来表示大多数事情-将数值代入函数，并将它存储在变量中，等等。就像你们现在看到的一样，我们同样也可以使用在脚本语言中被称为字符串的文字值-你可以将它们想象成一串串的字母。
+			在這教學指導之前，我們做的大部分事情都是使用數值 – 例如，傳遞數目到函數裏、儲存數目到變數裏等等。現在你可以看到，我們也能用文字值，在Javascript裡我們把那些叫做字串 - 就想象它為一“串”字母吧。
 		</p>
 		
 		<p class="objective">
 			To create a string, we surround text in matching quotation marks: <br>
-			在围绕文本中键入如下文字：“Hello World！”别忘了带上引号。这样就可以创建一个字符串了。
+			要造一個字串，我們用匹配的引號圍繞文字：
 		</p>
 		
 		<pre class="prettyprint">
 "Hello World!"
+"你好，世界！"
 		</pre>
 		
 		<p class="objective">
 			We have to actually do something with that string - like pass it to the 
 			<a href="https://www.khanacademy.org/cs/texttext-x-y/937624625">text()</a> command:<br>
-			我们需要在该字符串上进行操作-比如将该字符串放到<a href="https://www.khanacademy.org/cs/texttext-x-y/937624625">text()</a>命令中：
+			我們實際上要用那字串來做一些事 - 像傳遞它到<a href="https://www.khanacademy.org/cs/texttext-x-y/937624625">文字()</a>指令去：
 		</p>
 		
 		<pre class="prettyprint">
@@ -43,17 +44,18 @@ text("Hello World!", 100, 100);
 		
 		<p class="objective">
 				We could also store it in a variable, and then pass that variable into the text() command:<br>
-				我们也可以将它存储在变量中，然后将该变量放入这个text()命令中。
+				我們也可以存它到變數裏，然後把該變數傳遞到 文字() 指令去。
 		</p>
 		
 		<pre class="prettyprint">
+// myGreeting = "我的問候"
 var myGreeting = "Hello World!";
 text(myGreeting, 100, 100);
 		</pre>
 		
 		<p class="objective">
 			Note that we can also use single quotation marks:<br>
-			注意：我们也可以使用单一引号：
+			注意我們是能夠用單引號的：
 		</p>
 		
 		<pre class="prettyprint">
@@ -61,39 +63,39 @@ var myGreeting = 'Hello World!';
 		</pre>
 		<p class="objective">
 			But we *can't* mix and match quotation marks - that's an error! Pick either single or double marks, and stick with it.<br>
-			但我们*绝不能*混淆搭配引号——这是错误的！确保只选择单或双引号，并且坚持使用它。
+			但我們*不能*混合搭配引號 - 那是錯的！請選擇單引號或者雙引號，然後保持一緻。
 		</p>
 		
 		<pre class="prettyprint">
-var myGreeting = 'Hello World!"; // oh noes!   啊不要!
+var myGreeting = 'Hello World!"; // oh noes!   噢不！
 		</pre>
 		
 		<p class="objective">
 			Just like we can manipulate number values, we can also manipulate strings, like if we want to add one string to another string:<br>
-			就像我们能处理数值一样，我们也能处理字符串，如下面这个将一条字符串加入到另一条字符串中的例子：
+			就像我們能操作數值一樣，我們也能操作字串，例如我們可以將一個字串和另一個字串相加：
 		</p>
 		
 		<pre class="prettyprint">
 var myGreeting = "Alo";
 var myName = "Winston";
-var sayHello = myGreeting + ", " + myName + "!"; // Alo, Winston!
+var sayHello = myGreeting + ", " + myName + "!"; // Alo, Winston! = 你好，溫斯頓！
 		</pre>
 		
 		<p class="objective">
 			We can also combine strings with number values, like so:<br>
-			我们也能将字符串和数值结合起来，像这样：
+			我們也能結合字串和數值，像這樣：
 		</p>
 		
 		<pre class="prettyprint">
 var xPos = 10;
 var yPos = 20;
-var label = "The coordinates are " + xPos + ", " + yPos; // "坐标如下："
+var label = "The coordinates are " + xPos + ", " + yPos; // "座標是："
 		</pre>		
 		
 		<p class="objective">
 			We also saw that we can use different commands to change the text size and text font when we display string using the text() command. 
 			You can read more about those in the <a href="https://www.khanacademy.org/cs/program-docs#cs-documentation-text">text section</a> of our documentation.<br>
-			我们也能看到，当我们使用 <a href="https://www.khanacademy.org/cs/program-docs#cs-documentation-text">text() </a> 命令显示字符串时，我们也能使用不同命令更改文本大小与字体。你可以在我们文件的文本部分了解更多内容。
+			我們也能看到，我們在利用 文字() 指令來顯示字串時，我們能用不同的指令去改變字體的大小和式樣。你可以在我們參考文件裏的<a href="https://www.khanacademy.org/cs/program-docs#cs-documentation-text">文字章節</a>閲讀更多有關這類資料。
 		</p>
 		
 		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page </a></p>

@@ -8,21 +8,21 @@
 	</head>
 	<body>
 		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Mouse Tracker<br>
-			挑战： 鼠标追踪
+			挑戰：滑鼠追蹤器 
 		</h1>
 		<p class="objective">
 			Track the mouse position.<br>
-			追踪鼠标的位置
+			追蹤滑鼠位置。
 		</p>
 		
 		<h2>Step 1: Follow the mouse with the pink ball!<br>
-			步骤 1： 用粉红色小球跟随鼠标！
+			第一步：用粉紅色圓點追蹤滑鼠！
 		</h2>
 		
 		<p class ="objective">
 			To start our mouse tracking program, make it so that the ellipse() shows up at the user's mouse position, 
 			instead of always being in the same position.<br>
-			在开始我们鼠标追踪项目之前， 调整椭圆形的（），让它显示在鼠标所在方位，而不是始终让它保持同一位置不变。
+			開啓我們的滑鼠追蹤器程式後， 橢圓() 會顯示於用戶的滑鼠位置上，而不是一直呆在同一個位置。
 		</p> 
 		
 		<pre class="prettyprint">
@@ -33,7 +33,7 @@ var draw = function() {
 		</pre>
 		
 		<h2>Step 2: Display the coordinates!<br>
-			步骤 2：显示坐标！
+			第二步：顯示座標！
 		</h2>
 		
 		<p class ="objective">
@@ -41,7 +41,7 @@ var draw = function() {
 			next to the dot, constantly updating as you move the mouse. To do that, first build a 
 			string of the current x position and the current y position, separated by a comma. 
 			Store that in a variable. Then, pass that variable into the text() command and show it next to the ball.<br>
-			为了让这个追踪器更加有用， 我们会在原点旁边显示当前鼠标的X 跟Y 坐标，它会随着你移动鼠标而不断变化。为了做到这一点， 首先要建立一个含有当前X坐标跟Y 坐标的字符串， 并用逗号分隔。将它储存为变量。然后将这个变量转换为text（）命令，并且让它显示在小球的边上。
+			要令這追蹤器更有用，我們要讓現在的 滑鼠X 與 滑鼠Y 的位置顯示於圓點旁，並且當你動滑鼠時它們也同步更新位置。要做到這點，先用字串寫出現在的 x位置 和 y位置，用逗號分隔它們倆個，再將字串儲存在變數裏。 然後，把變數傳遞到 文字() 指令裏，讓它顯示在圓點旁。
 		</p>
 		<pre class="prettyprint">
     var label = <span class="boxorange">     </span> + " , " + <span class="boxpink">     </span>;

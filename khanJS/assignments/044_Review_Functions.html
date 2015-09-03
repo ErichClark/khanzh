@@ -14,21 +14,21 @@
 		
 		<p class="objective"><em>
 			This is a review of what we covered in this tutorial on functions.<br>
-			这是对之前函数部分内容的回顾。
+			現在我們將復習這個教學指導裡提及的函數內容。
 		</em></p>
 		
 		<p class="objective">
 			We often want to be able to re-execute blocks of code when we are writing programs, without having to re-write the block of code entirely. We need a way of grouping code together and giving it a name, so that we can call it by that name later, and that's what we call a function.<br>
-			我们在编程时，为了省去重写整个代码块之苦，为了能重复执行代码，我们需要一个整合代码并给它命名的方法，方便在今后需要时调用它——这就是函数。
+			寫程式時，我們常常會想重複執行一段程式碼，但又不想把這段程式碼再打一遍。我們需要一個把程式碼集合成一組並為之命名的方法，之後要用到時用該名稱呼叫即可，而這個方法就稱為「函數」。
 		</p>
 		
 		<p class="objective">
 			To create a function, we must first declare it and give it a name, the same way we'd create any variable, and then we follow it by a function definition:<br>
-			在创建函数前，我们必须先声明它，并给它命名——这也是我们创建变量的方法；接下来，我们会定义该函数。
+			創造函數時，須先宣告該函數並命名，就像創造變數一樣。接著就寫下函數的定義：
 		</p>
 		
 		<pre class="prettyprint">
-// sayHello -&gt; 说“你好”
+// sayHello -&gt; "說嗨"
 		
 	var sayHello = function() {
 
@@ -37,12 +37,12 @@
 		
 		<p class ="objective">
 			We could put any code inside that function - one statement, multiple statements - depends what we want to do. In this function, we could just output a message at a random location:<br>
-			我们可以在该函数中嵌入任意代码——一条语句或是多条语句——这取决于我们想做什么。在该函数中，我们只能在随机位置输出一条信息：
+			我們可以把任何程式碼放在函數裡，單一陳述或是多個陳述均可，這完全取決於你函數的功能。在這個函數裡，我們可以在任意處輸出訊息：
 		</p>
 		
 		<pre class="prettyprint">
-// sayHello -&gt; 说“你好”
-// “Halllllllo” -&gt; 你好!
+// sayHello -&gt; 說嗨
+// “Halllllllo” -&gt; 您好!
 		
 var sayHello = function() {
    text("Halllllllo!", random(200), random(200));
@@ -51,22 +51,22 @@ var sayHello = function() {
 
 		<p class ="objective">
 			Now, if all we do is declare the function, nothing will happen. In order for the program to execute the code that's inside the function, we actually have to "call" the function, by writing its name followed by empty parenthesis:<br>
-			现在，如果我们只是声明函数，那什么也不会发生。为使程序能执行函数中的代码，我们必须通过在空括号内写入函数称来“调用”该函数。
+			如果我們只是宣告函數，那什麼也不會發生。若要程式執行函數內的程式碼，就必須「呼叫」函數。呼叫方式為打上函數名稱，後面接一對括號。
 		</p>
 		
 		<pre class="prettyprint">
-// sayHello -&gt; 说“你好”
+// sayHello -&gt; 說嗨
 
 sayHello();
 		</pre>
 		
 		<p class="objective">
 			And then we could call it whenever we wanted, as many times as we wanted!<br>
-			然后，我们就能随时调用该函数了，想调用几次就用几次！
+			接下來想要呼叫函數幾次都可以！
 		</p>
 				
 		<pre class="prettyprint">
-// sayHello -&gt; 说“你好”
+// sayHello -&gt; 說嗨
 
 sayHello();
 sayHello();
@@ -75,29 +75,29 @@ sayHello();
 		
 		<p class="objective">
 			We often want to be able to customize functions, to tell the program "well, do all of this code, but change a few things about how you do it." That way we have code that is both reusable *and* flexible, the best of both worlds. We can achieve that by specifying "arguments" for a function, using those arguments to change how the function works, and passing them in when we call the function.<br>
-			我们通常想要设定个性化的函数，告诉程序；“嘿，执行这些代码，但请稍稍改变下你的执行方式。”幸亏我们的代码都是兼具重复使用性和高灵活度的。我们可以通过为函数指定“参数”来达到目标——使用参数来改变函数的运作方式，并在调用它时进行传值。
+			我們經常會想自訂函數，跟程式說：「請執行這些程式碼，可是麻煩改變一些地方」。我們想要既有重複使用性又有彈性的程式碼。要做到這點，就需要指定函數的「參數」，並在呼叫函數時傳入參數，用這些參數改變函數的功能。
 		</p>
 			
 		<p class ="objective">
 			For example, what if we wanted to be able to say exactly where we want the message displayed, just like we can say exactly where we want to draw rect()s and ellipse()s? We could imagine calling it like so, to put the message at two precise coordinates:<br>
-			例如，假设我们想要准确指定信息出现的位置，就像我们绘制矩形或椭圆位置时想要准确指定它们的位置时，应该怎么做呢？我们可以试想能否如此调用它，在两个准确的坐标处输入信息：
+			舉例來說，如果我想要指定訊息出現的位置，就像用 矩形() 和 橢圓形() 指定繪圖位置時一樣，該怎麼做呢？我們試想能否用同樣的方式呼叫它，從而把訊息放在精準的座標位置。
 		</p>
 		
 		<pre class="prettyprint">
-// sayHello -&gt; 说“你好”
+// sayHello -&gt; 說嗨
 		
 sayHello(50, 100);
 sayHello(150, 200);
 		</pre>
 		
 		<p class ="objective">
-			To make that work, we need to change our sayHello function definition so it knows that it will receive 2 arguments, and then uses them inside:<br>
-			要达到这个目标，我们需要改变“sayHello”(说你好)那条函数的定义，这样，它就能接受两个参数，并在函数内使用它们了：
+			To make that work, we need to change our sayHello() function definition so it knows that it will receive 2 arguments, and then uses them inside:<br>
+			要實現這個功能，我們需要改變 說嗨() 函數的定義，讓函數知道它會接收到兩個參數，並在函數內使用這兩個參數。
 		</p>
 		
 		<pre class="prettyprint">
-// sayHello -&gt; 说“你好”
-// “Halllllllo” -&gt; 你好！
+// sayHello -&gt; 說嗨
+// “Halllllllo” -&gt; 您好！
 
 var sayHello = function(xPos, yPos) {
    text("Halllllllo!", xPos, yPos);
@@ -106,12 +106,12 @@ var sayHello = function(xPos, yPos) {
 		
 		<p class="objective">	
 			The arguments that get passed in basically become like variables inside your function definition, and the names depend on what you call them in the parentheses. We could just as easily rename them to something shorter:<br>
-			在你的函数定义内，进行传值的这些参数基本上就像是变量，而你在括号内的描述就是它们的名称。我们可以轻而易举地给它们改个更短的名字：
+			參數傳入後，它在函數內基本上就像是變數一般，而名稱則依括號內所輸入的名稱而定。我們也可以把它們改為更短的名稱。
 		</p>
 		
 		<pre class="prettyprint">		
-// sayHello -&gt; 说“你好”
-// “Halllllllo” -&gt; 你好！
+// sayHello -&gt; 說嗨
+// “Halllllllo” -&gt; 您好！
 		
 var sayHello = function(x, y) {
    text("Halllllllo!", x, y);
@@ -120,12 +120,12 @@ var sayHello = function(x, y) {
 		
 		<p class="objective">
 			Our functions can accept any number of arguments - zero, one, two, or more. We could have also decided that we wanted to change our function to accept a name to say hello to:<br>
-			函数可接受任何参数值——0，1，2等等。我们也能修改函数，使它能说出人的名字。
+			我們的函數可以接受任意數目的參數，零個、一個、兩個或更多參數均可。我們也可以改變函數，讓它接收一個名字，然後打招呼：
 		</p>
 		
 		<pre class="prettyprint">
-// sayHello -&gt; 说“你好”
-// “Halllllllo” -&gt; 你好！
+// sayHello -&gt; 說嗨
+// “Halllllllo” -&gt; 您好！
 		
 var sayHello = function(name) {
    text("Halllllllo, " + name, random(200), random(200));
@@ -134,7 +134,7 @@ var sayHello = function(name) {
 		
 		<p class="objective">
 			And then we would have called it like so:<br>
-			然后我们需要这样调用它：
+			我們可以這樣呼叫：
 		</p>
 		
 		<pre class="prettyprint">	
@@ -146,12 +146,12 @@ sayHello("Pamela");
 		
 		<p class="objective">	
 			We could combine those ideas, and have it accept three arguments, for the name and position:<br>
-			把这些想法结合起来就是，为了说出名字及确定名字的摆放位置，该函数需要能接受三个参数。
+			我們可以綜合這些想法，讓函數接受名稱和位置共三個參數：
 		</p>
 		
 		<pre class="prettyprint">	
-// sayHello -&gt; 说“你好”
-// “Halllllllo” -&gt; 你好！
+// sayHello -&gt; 說嗨
+// “Halllllllo” -&gt; 您好！
 		
 var sayHello = function(name, x, y) {
    text("Halllllllo " + name, x, y);
@@ -160,33 +160,32 @@ var sayHello = function(name, x, y) {
 		
 		<p class="objective">	
 			And then call it like so:<br>
-			接下来我们这样调用它：
+			然後這樣呼叫：
 		</p>
 		
 		<pre class="prettyprint">	
-// sayHello -&gt; 说“你好”
-// 他是 "Winston"
+// sayHello -&gt; 說嗨
 		
 sayHello("Winston", 10, 100);
 		</pre>
 		
 		<p class="objective">
 			It really depends on what you want your functions to do, and how much you want to customize what they can do. You can always start off with no arguments, and then add more as you realize you need them.<br>
-			这真的取决于你想要函数做什么，及想要它们如何个性化。没有参数你也可以执行程序，然后在需要的时候添加进去即可。
+			重點在於你想讓函數有什麼功能，以及你想自訂函數到什麼程度。當然，你一開始可以不訂下任何參數，之後需要時再訂。
 		</p>
 				
 		<p class="objective">
-			Now, you've actually been calling functions this whole time- that's how you've been making drawing and animations - like with rect, ellipse, triangle, etc. All of those functions are ones that come from the ProcessingJS library, and we load them into every program that you make here, so that you can always use them. We've defined the functions for you, because we thought they'd be useful, and now it's up to you to decide what custom functions you want to use in your own programs. For example, we provide the ellipse function, but we don't provide a cat function - if your program involves a lot of different cats in different locations, maybe you should create your own cat function!<br>
-			到目前为止，你一直在调用函数——这也是你绘制图片与动画的方式——比如，画矩形，椭圆，三角，等等。以上这些函数都来自Processing. js资料库，我们已将它们上载至你们在这里制作的每个程序中，这样你就能随时使用它们。我们已经为大家定义了一些有用的函数，大家使用的时候也可根据程序需要自定义其他的函数。例如，我们提供了椭圆函数，但我们没有猫咪函数——如果你的程序需要在许多不同位置放置猫咪，那你就得自己创建一个猫咪函数。
+			Now, you've actually been calling functions this whole time- that's how you've been making drawing and animations - like with rect(), ellipse(), triangle(), etc. All of those functions are ones that come from the ProcessingJS library, and we load them into every program that you make here, so that you can always use them. We've defined the functions for you, because we thought they'd be useful, and now it's up to you to decide what custom functions you want to use in your own programs. For example, we provide the ellipse function, but we don't provide a cat function - if your program involves a lot of different cats in different locations, maybe you should create your own cat function!<br>
+			其實你一直都在呼叫函數，用 矩形() 橢圓形() 三角形() 畫圖和製作動畫就是在呼叫函數。這些函數來自JS處理程式庫，我們會把在這裏寫的每個程式都載入程式庫，那樣你就可以隨時使用。我們定義了一些我們認為有用的函數，現在你也可以定義自己的函數。舉例來說，我們有畫橢圓的函數，可是沒有畫貓咪的函數。如果你的程式要讓很多貓咪出現在不同位置，那也許你該創造自己的貓咪函數！
 		</p>
 				
 		<p class="objective">
 			There's another powerful thing we can do with functions - we can use them to take in some values, compute them, and return a new value. Think about all the things you can do with a calculator - add values, subtract, calculate square root, multiply, etc. All of those would be done with functions that took in the input and outputted the result. The functions would take in the input as arguments and output the result using a return statement. Here's a function that adds two numbers and returns the result:<br>
-			借助函数，我们还能做一件非常强大的事，那就是——取值，计算，并返回新值。想想一个计算器的功能，它可以做加法、减法、算平方根、乘法等等。所有这些都能借助函数轻而易举地完成，因为函数能接收输入值，并返回输出值。函数会将输入值作为参数接收，并使用返回语句输出结果。下面就是一个将两数字相加并返回结果的函数：
+			函數還有一個強大的功能：我們可以把數值傳入，讓函數在內部計算並輸出新的值。想想一台計算機能幹嘛？可以加、減、乘、除、開根號等等。這些都可以在函數內計算，讓函數輸出結果。函數以參數形式取得輸入值，以回覆敘述形式輸出。來看看這個函數，它能把兩個數字相加並回傳結果：
 		</p>
 		
 		<pre class="prettyprint">	
-// addNumbers -&gt; 数值相加
+// addNumbers -&gt; 數字相加
 		
 var addNumbers = function(num1, num2) {
   var result = num1 + num2;
@@ -194,62 +193,62 @@ var addNumbers = function(num1, num2) {
 };
 
 var sum = addNumbers(5, 2);
-text(sum, 200, 200); // Displays "7" 显示数字“7”
+text(sum, 200, 200); // Displays "7" 顯示一個「7」
 		</pre>
 		
 		<p class="objective">
 			The <em>return statement</em> does two things: it gives a value back to whoever called it (which is why we could store it in the sum variable), and it immediately exits the function. That means it'd be silly if we had something like this, because that last line would never get executed:<br>
-			<em>返回语句</em>有两个作用：调用它时返回值（这就是我们能在总和变量中存储它的原因），其后便马上退出函数。如果我们这样写语句那还真是笨到家了，因为最后一行永远不会被执行：
+			回覆敘述會做兩件事：把值回傳給呼叫它的程式碼（這也就是為什麼我們要把它存入總和變數），接著馬上結束函數。所以這樣做有點傻，因為最後一行程式碼永遠不會被執行。
 		</p>
 		
 		<pre class="prettyprint">
-// addNumbers -&gt; 数值相加		
+// addNumbers -&gt; 數字相加		
 		
 var addNumbers = function(num1, num2) {
   var result = num1 + num2;
   return result;
-  result = result * 2; // silly! 笨蛋！
+  result = result * 2; // silly! 好傻！
 };
 		</pre>
 		
 		<p class="objective">
 			Functions with return values are quite useful for manipulating data in programs, and they can be combined together in expressions, too:<br>
-			返回值函数用于程序处理数据是很有用的，它们可以被整合为如下表达式：
+			能回傳值的函數很適合拿來處理程式裡的資料，也可以和表示式合併使用。
 		</p>
 		
 		<pre class="prettyprint">
 // biggerSum -&gt; 更大的总和
-// addNumbers -&gt; 数值相加
+// addNumbers -&gt; 數字相加
 		
 var biggerSum = addNumbers(2, 5) + addNumbers(3, 2);
 		</pre>
 					
 		<p class="objective">	
 			You can even call functions inside function calls, although that can get hard to read at times:<br>
-			你甚至可以在调用函数的内部再调用函数，虽然有时那会有点难以读取：
+			你甚至可以在函數呼叫裡呼叫其他函數，但這樣會較難以閱讀。
 		</p>
 		
 		<pre class="prettyprint">
-// addNumbers -&gt; 数值相加
-// hugeSum -&gt; 大数值
+// addNumbers -&gt; 數字相加
+// hugeSum -&gt; 大總和
 		
 var hugeSum = addNumbers(addNumbers(5, 2), addNumbers(3, 7));
 		</pre>
 		
 		<p class="objective">
 			Now that you know how to create functions that wrap around blocks of code, we have to bring up an important concept: <em>local variables</em> versus <em>global variables</em>.<br>
-			现在，你们已经知道如何把代码块整合起来创建函数，在此，我们将提出一个重要的概念：<em>局部变量</em>与<em>全局变量</em>。
+			學會怎麼把一段程式碼包裝成函數後，我們來討論一個重要的概念：局部變數和總體變數。
 		</p>
 				
 		<p class="objective">		
 			When we declare a new variable *inside* a function, we say that it is local to that function. That's because only that function can see that variable - the rest of the program outside of it cannot. Once we're outside that function, it's like it no longer exists. In the following function, localResult is a local variable:<br>
-			当我们<em>在函数“内部”</em>声明一个新的变量时，它就是该函数的局部变量。因为只有该函数可见该变量——程序其余部分不可见。对其他函数而言，就像它不存在了一样。在如下函数中，局部结果即为一个局部变量：
+			我們在函數內宣告新的變數時，我們稱它為局部變數，因為只有該函數才能看見這個變數，函數外的程式都無法讀取這個變數。在函數之外，這個變數像是消失了一樣。在下面這個函數裡，局部結果 "局部結果" 就是一個局部函數。
 		</p>
 		
 		<pre class="prettyprint">
-// addNumbers -&gt; 数值相加
-// localResult -&gt; 局部结果
-// “The local result is: “ -&gt;  局部结果是
+// addNumbers -&gt; 數字相加
+// localResult -&gt; 局部結果
+// “The local result is: “ -&gt;  局部結果是：
 		
 var addNumbers = function(num1, num2) {
   var localResult = num1 + num2;
@@ -257,23 +256,23 @@ var addNumbers = function(num1, num2) {
   return localResult;
 };
 addNumbers(5, 7);
-println(localResult); // oh noes! 啊不要！
+println(localResult); // oh noes! 噢不！
 		</pre>
 		
 		<p class="objective">	
-			When we run that code, we'll get an error on the final line: "localResult is not defined." The variable is only defined inside the function, because that's where we declared it with the var localResult = line, and is not defined outside of it.<br>
-			当我们运行该代码时，在最后一行会出现错误：“局部结果未被定义。”该变量只在该函数内被定义了，因为我们是在函数内部声明var localResult =line的，却并未在外部定义它。
+			When we run that code, we'll get an error on the final line: "localResult is not defined." The variable is only defined inside the function, because that's where we declared it with the "var localResult = " line, and is not defined outside of it.<br>
+			程式執行到最後一行時，出現了錯誤訊息：「局部結果未定義」。因為這個變數只在函數內定義， 就是我們隻在 "var 局部結果 = " 行這一行宣告了該變數，因此在函數外它是沒有定義的。
 		</p>
 		
 		<p class="objective">	
 			When we declare a variable outside our functions, we say that it is a global variable. That's because all functions can now access it and do whatever they want with it.<br>
-			当我们在该函数外部声明变量时，它就变成全局变量了。因为现在所有函数都能访问它并对其进行操作了。
+			在函數外宣告變數時，我們稱之為總體變數，所以的函數都可以隨意使用該變數。
 		</p>
 		
 		<pre class="prettyprint">
-// addNumbers -&gt; 数值相加
-// globalResult -&gt; 全局结果
-// “The global result is: “ -&gt; 全局结果是：
+// addNumbers -&gt; 數字相加
+// globalResult -&gt; 總體結果
+// “The global result is: “ -&gt; 總體結果是：
 		
 var globalResult;
 
@@ -287,12 +286,12 @@ println(globalResult);
 		
 		<p class="objective">	
 			When we run the above code, we will not get an error, because we declared globalResult outside of the function, so we can access it wherever we want.<br>
-			当我们运行以上代码时，就不会发生错误，因为我们在该函数外部声明了全局结果，所以我们可在任意位置访问它。
+			現在執行上述程式時，不會再有錯誤訊息，因為我們在函數外定義了總體結果 總體結果，所以可以隨時順利存取該變數。
 		</p>
 		
 		<p class="objective">	
 			Every programming language is different, but for JavaScript, it's important to know that variables have "function scope" - a function can see the local variables that were declared inside of it and the global variables that were declared outside of it, but it cannot see the local variables inside other functions.<br>
-			每种编程语言都不相同。但是，在使用JavaScript的时候，最重要的是要知道“变量”有一个“作用域”——该函数可看到在其内部声明的局部变量或者在其外部声明的全局变量，但是不能看到其他函数的局部变量。
+			每種程式語言都不一樣，但以 Javascript程式語言 來說，很重要的一個觀念是——變數有各自的作用域。函數可以看見自己內部定義的局部變數，也可以看見函數外定義的總體變數，但看不見其他函數內部的局部變數。
 		</p>
 
 		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page </a></p>
