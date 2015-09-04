@@ -12,32 +12,69 @@
 			DESCRIPTION
 		</p>
 		
-		<h2>Step 1: </h2>
-		<p><img src="../images/ .png" title="goal image"></p>
+		<h2>Step 1: Play with the number</h2>
+		
 		<p class ="objective">
-			step 1 instructions
-		</p> 
+			Our goal for this challenge is to write a number analyzer program that: displays the number assigned to “theNumber”, and draws a rectangular outline to show whether “theNumber” is positive, negative or zero.<br>
+			
+		</p>
+		<ul>
+			<li> Positive numbers are numbers that are larger than zero.<br>
+			</li>
+			<li> Negative numbers are numbers that are smaller than zero.<br>
+			</li>
+			<li> Zero isn't positive and it also isn't negative. The only number that is zero is zero.<br>
+			</li>
+		</ul>
+		<p> Right now, the outline is drawn around ''It's positive'' to show that 100 is positive (because 100 is larger than zero), but our program is not very smart yet. If we change the number, assigned to theNumber, to a number that is not positive, then ''It's positive'' will still be outlined (even though it won't be true anymore), but the correct text (''It's negative'' or ''It's zero'') will not be outlined.<br>
+		</p>
+		<p> Read through the code now, and then change the number assigned to theNumber to prove that it's not very smart (yet!)<br>
+		</p>
+		
 		<pre class="prettyprint">
-step 1 code
+var theNumber = <span class="boxpink">     </span>;
+
+fill(0, 0, 0);
+textSize(30);
+text("Analysis of: " + theNumber, 10, 36);
+
+text("It's positive", 10, 90);
+text("It's negative", 10, 140);
+text("It's zero", 10, 190);
+
+noFill();
+rect(5, 60, 200, 40); 
 		</pre>
 		
-		<h2>Step 2: </h2>
-		<p><img src="../images/ .png" title="goal image"></p>
+		<h2>Step 2: Make all the outlines</h2>
+		
 		<p class ="objective">
-			step 2 instructions
+			Right now, there's only an outline for ''It's positive''. To make our program smart, we'll need to be able to outline any of the results. Add a rectangle to outline ''It's negative'', and add another rectangle to outline ''It's zero''.<br>
+			
 		</p>
 		<pre class="prettyprint">
-step 2 code
+rect(5, 60, 200, 40);
+rect(5, ...., 200, 40);
+rect(5, ...., 200, 40);
 		</pre>
 		
-		<h2>Step 3: </h2>
-		<p><img src="../images/ .png" title="goal image"></p>
+		<h2>Step 3: Make it smart!</h2>
+		
 		<p class="objective">
-			step 3 instructions
+			Now use if statements, and the comparison operators you just learned, to control when each outline is drawn.
 		</p>
-		<pre class="prettyprint">
-step 3 code
-		</pre>
+		<p>
+			Try assigning theNumber different numbers, to make sure your program works. Make sure that:
+		</p>
+		<ul>
+			<li> the outline around ''It's positive'' is only drawn when theNumber is positive.<br>
+			</li>
+			<li> the outline around ''It's negative'' is only drawn when theNumber is negative.<br>
+			</li>
+			<li> the outline around ''It's zero'' is only drawn when theNumber is zero.<br>
+			</li>
+		</ul>
+
 		
 		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page </a></p>
 	</body>
