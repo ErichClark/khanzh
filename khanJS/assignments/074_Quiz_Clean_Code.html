@@ -8,181 +8,231 @@
 	</head>
 	<body>
 		<h1><i class="fa fa-star fa-3x"></i>Quiz: Clean Code<br> </h1>
+
+		<p class="objective"> 
+		<em> Check if you have a good idea of what makes JavaScript code readable and understandable.<br>
 		
-		<h3>Question 1</h3>
-		<p class="objective"> Q? </p>
+		</em></p>
+		<h3> Question 1:</h3>	
+		<p class="objective"> 
+			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?<br>
+			
+		</p>	
 		<pre class="prettyprint">
-codey
-code</pre>
-		<p class="objective"> Q? </p>		
-		<p>
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for a hint  </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+// addUp
+		
+// Answer 1
+var addUp = function(a, b) {
+  var c = a + b;
+  return c;
+};
 
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+// Answer 2
+var addUp = function(a, b) {
+var c = a + b;
+return c;
+};
 
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 4th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
+// Answer 3
+var addUp = function(a, b) { var c = a + b; return c; };
+		</pre>
+		<p class = "hiddenHint"> 
+			According to most JavaScript coding style guidelines, you should put the body of your function definition on a different line from the header of the function definition. Also, you should indent the body one level, so that you can easily see that the code is inside the function definition. Therefore, Answer 1 is the most readable.<br> <br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 5th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 6th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 7th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 8th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第八個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
-
 		</p>
 		
-		<h3>Question 2</h3>
-		<p class="objective"> Q? </p>
+		<h3>Question 2:</h3>
+		<p class="objective"> 
+			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?<br>
+			
+		</p>
 		<pre class="prettyprint">
-codey
-code</pre>
-		<p class="objective"> Q? </p>		
-		<p>
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for a hint  </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+// 1
+for (var i = 0; i < 10; i++) {
+   println(i);
+}
 
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+// 2
+for (var i = 0; i < 10; i++) { 
+println(i);
+}
 
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 4th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
+// 3
+for (var i = 0; i < 10; i++) { println(i); }
+		</pre>
+		<p class = "hiddenHint"> 
+			According to most JavaScript coding style guidelines, you should put the body of your loop on a different line from the header of the for loop. Also, you should indent the body of the for loop one level, so that you can easily see that the code is inside the for loop. Therefore, Answer 1 is the most readable.<br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 5th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
+		</p>
+	
+		<h3>Question 3:</h3>
+		<p class="objective"> 
+			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?<br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 6th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
+		</p>
+		<pre class="prettyprint">
+// Answer 1
+if (x > 2) {
+println(x);
+}
+
+// Answer 2
+if (x > 2) {println(x);}
+
+// Answer 3
+if (x > 2) {
+  println(x);
+}	
+		</pre>
+		<p class = "hiddenHint"> 
+			According to most JavaScript coding style guidelines, you should put the body of your if statement on a different line from the condition of the if statement. Also, you should indent the body one level, so that you can easily see that the code is inside the if statement. Therefore, Answer 3 is the most readable.<br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 7th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 8th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第八個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
 		</p>
 		
-		<h3>Question 3</h3>
-		<p class="objective"> Q? </p>
+		<h3>Question 4:</h3>
+		<p class="objective"> 
+			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?<br>
+			
+		</p>
 		<pre class="prettyprint">
-codey
-code</pre>
-		<p class="objective"> Q? </p>		
-		<p>
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for a hint  </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+// Answer 1
+ellipse(x, y, 15, 5);
 
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+// Answer 2
+ellipse(x,y,15,5);
 
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 4th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
+// Answer 3
+ellipse (x, y, 15, 5);	
+		</pre>
+		<p class = "hiddenHint"> 
+			According to most JavaScript coding style guidelines, you should put spaces after the parameters in your function calls, and no spaces between the function name and the parentheses.
+Therefore, Answer 1 is the most readable.<br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 5th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 6th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 7th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 8th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第八個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
 		</p>
 		
-		<h3>Question 4</h3>
-		<p class="objective"> Q? </p>
+		<h3>Question 5:</h3>
+		<p class="objective"> 
+			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?<br>
+			
+		</p>
 		<pre class="prettyprint">
-codey
-code</pre>
-		<p class="objective"> Q? </p>		
-		<p>
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for a hint  </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+// Answer 1
+var x = 5*i;
 
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+// Answer 2
+var x = 5 * i;
 
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 4th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
+// Answer 3
+var x=5 * i;	
+		</pre>
+		<p class = "hiddenHint"> 
+			According to most JavaScript coding style guidelines, you should put spaces before and after the assignment operator (=) and a space before and after mathematical operators (like *). Therefore, Answer 2 is the most readable.<br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 5th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 6th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 7th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 8th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第八個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
 		</p>
 		
-		<h3>Question 5</h3>
-		<p class="objective"> Q? </p>
+		<h3>Question 6:</h3>
+		<p class="objective"> 
+			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here? <br>
+
+		</p>
 		<pre class="prettyprint">
-codey
-code</pre>
-		<p class="objective"> Q? </p>		
-		<p>
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for a hint  </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+// Answer 1
+if (x>5 && y<10) {
+  rect(x, y, 10, 10);
+}
 
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
-			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+// Answer 2
+if (x > 5 && y < 10) {
+  rect(x, y, 10, 10);
+}
 
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 4th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
+// Answer 3
+if (x>5&&y<10) {
+  rect(x, y, 10, 10);
+}	
+		</pre>
+		<p class = "hiddenHint"> 
+			According to most JavaScript coding style guidelines, you should put spaces before and after logical operators (like &&) and a space before and after comparison operators (like >, <). Therefore, Answer 2 is the most readable.<br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 5th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
+		</p>
+		
+		<h3>Question 7:</h3>
+		<p class="objective"> 
+			Which of these code snippets is the most readable and adheres to JavaScript naming conventions? <br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 6th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
+		</p>
+		<pre class="prettyprint">
+// Answer 1
+var a = 10;
+var b = 200;
+var c = 300;
+ellipse(b, c, a, a);
+
+// Answer 2
+var sunSize = 10;
+var sunX = 200;
+var sunY = 300;
+ellipse(sunX, sunY, sunSize, sunSize);
+
+// Answer 3
+var ss = 10;
+var sx = 200;
+var sa = 300;
+ellipse(sx, sy, ss, ss);	
+		</pre>
+		<p class = "hiddenHint"> 
+			To make your code more readable, you should pick variable names that relate to the content they're storing, and that adhere to the JS variable naming guidelines (using camelCase for multiple words). Answer 2 is the most readable, because the variable names reflect the content they're storing, and they are camelCased:<br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 7th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
+		</p>
+		
+		<h3>Question 8:</h3>
+		<p class="objective"> 
+			Let's say you wrote a program that animated a Superman flying across the screen. Which would be the best comment to put at the top?  <br>
+
+		</p>
+		<pre class="prettyprint">
+// Answer 1
+/* This program is so cool, you should vote it up.
+*/
+
+// Answer 2
+/* superman!!
+*/
+
+// Answer 3
+/* 
+This program animates Superman flying across the screen.
+The speed is controlled by variables at the top.
+Written in 2015 by @Batman.
+*/
+		</pre>
+		<p class = "hiddenHint"> 
+			It's a great idea to put a multi-line comment at the top of your programs that describes what it does, gives the viewer any relevant instructions, and provides information on the author.
+The best comment of the ones provided is Answer 3.<br>
+		</p>
+		
+		<h3>Question 9:</h3>
+		<p class="objective"> 
+			In your Superman-animating program, there's a line that controls his speed. Which comment is the most clear? <br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 8th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第八個提示！ </span></small><br>
+		</p>
+		<pre class="prettyprint">
+// Answer 1
+// changes x 
+var supermanX = max(supermanX + speed, 100);
+
+// Answer 2
+// Increases x position by speed, capping at 100
+var supermanX = max(supermanX + speed, 100);
+
+
+// Answer 3
+// Makes superman go wheeeee!
+var supermanX = max(supermanX + speed, 100);	
+		</pre>
+		<p class = "hiddenHint"> 
+			It's a good idea to comment lines of your program that might be confusing to others, especially if you're sharing with an audience of beginner programmers. If you do comment a line of code, your comment should explain the code accurately but in more human language. Of the options, we think Answer 2 is the most clear. <br>
 			
-			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
 		</p>
 		
 		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page </a></p>

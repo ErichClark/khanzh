@@ -1,0 +1,183 @@
+Quiz: Clean Code
+
+Check if you have a good idea of what makes JavaScript code readable and understandable.
+
+Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?
+
+Answer 1
+
+var addUp = function(a, b) {
+  var c = a + b;
+  return c;
+};
+
+Answer 2
+
+var addUp = function(a, b) {
+var c = a + b;
+return c;
+};
+
+Answer 3
+
+var addUp = function(a, b) { var c = a + b; return c; };
+
+***HINT***
+According to most JavaScript coding style guidelines, you should put the body of your function definition on a different line from the header of the function definition. Also, you should indent the body one level, so that you can easily see that the code is inside the function definition.
+Therefore, this is the most readable:
+
+var addUp = function(a, b) {
+  var c = a + b;
+  return c;
+};
+
+****QUESTION 2****
+
+
+for (var i = 0; i < 10; i++) {
+   println(i);
+}
+
+for (var i = 0; i < 10; i++) { 
+println(i);
+}
+
+for (var i = 0; i < 10; i++) { println(i); }
+
+According to most JavaScript coding style guidelines, you should put the body of your loop on a different line from the header of the for loop. Also, you should indent the body of the for loop one level, so that you can easily see that the code is inside the for loop.
+Therefore, this is the most readable:
+
+for (var i = 0; i < 10; i++) {
+   println(i);
+}
+
+****QUESTION 3****
+
+if (x > 2) {
+println(x);
+}
+
+if (x > 2) {println(x);}
+
+if (x > 2) {
+  println(x);
+}
+
+According to most JavaScript coding style guidelines, you should put the body of your if statement on a different line from the condition of the if statement. Also, you should indent the body one level, so that you can easily see that the code is inside the if statement.
+Therefore, this is the most readable:
+if (x > 2) {
+  println(x);
+}
+
+****QUESTION 4****
+
+ellipse(x, y, 15, 5);
+ellipse(x,y,15,5);
+ellipse (x, y, 15, 5);
+
+****HINT***
+
+According to most JavaScript coding style guidelines, you should put spaces after the parameters in your function calls, and no spaces between the function name and the parentheses.
+Therefore, this is the most readable:
+ellipse(x, y, 15, 5);
+
+****QUESTION 5****
+
+var x = 5*i;
+var x = 5 * i;
+var x=5 * i;
+
+According to most JavaScript coding style guidelines, you should put spaces before and after the assignment operator (=) and a space before and after mathematical operators (like *).
+Therefore, this is the most readable:
+var x = 5 * i;
+
+****QUESTION 6****
+
+if (x>5 && y<10) {
+  rect(x, y, 10, 10);
+}
+
+if (x > 5 && y < 10) {
+  rect(x, y, 10, 10);
+}
+
+if (x>5&&y<10) {
+  rect(x, y, 10, 10);
+}
+
+According to most JavaScript coding style guidelines, you should put spaces before and after logical operators (like &&) and a space before and after comparison operators (like >, <).
+Therefore, this is the most readable:
+if (x > 5 && y < 10) {
+  rect(x, y, 10, 10);
+}
+
+****QUESTION 7****
+
+Which of these code snippets is the most readable and adheres to JavaScript naming conventions?
+
+var a = 10;
+var b = 200;
+var c = 300;
+ellipse(b, c, a, a);
+
+var sunSize = 10;
+var sunX = 200;
+var sunY = 300;
+ellipse(sunX, sunY, sunSize, sunSize);
+
+var ss = 10;
+var sx = 200;
+var sa = 300;
+ellipse(sx, sy, ss, ss);
+
+To make your code more readable, you should pick variable names that relate to the content they're storing, and that adhere to the JS variable naming guidelines (using camelCase for multiple words).
+This code snippet is the most readable, because the variable names reflect the content they're storing, and they are camelCased:
+var sunSize = 10;
+var sunX = 200;
+var sunY = 300;
+ellipse(sunX, sunY, sunSize, sunSize);
+
+****QUESTION 8****
+
+Let's say you wrote a program that animated a Superman flying across the screen. Which would be the best comment to put at the top?
+
+/* This program is so cool, you should vote it up.
+*/
+
+/* superman!!
+*/
+
+/* 
+This program animates Superman flying across the screen.
+The speed is controlled by variables at the top.
+Written in 2015 by @Batman.
+*/
+
+It's a great idea to put a multi-line comment at the top of your programs that describes what it does, gives the viewer any relevant instructions, and provides information on the author.
+The best comment of the ones provided is:
+/* 
+This program animates Superman flying across the screen.
+The speed is controlled by variables at the top.
+Written in 2015 by @Batman.
+*/
+
+****QUESTION 9****
+
+In your Superman-animating program, there's a line that controls his speed. Which comment is the most clear?
+
+// changes x 
+var supermanX = max(supermanX + speed, 100);
+
+// Increases x position by speed, capping at 100
+var supermanX = max(supermanX + speed, 100);
+
+// Makes superman go wheeeee!
+var supermanX = max(supermanX + speed, 100);
+
+It's a good idea to comment lines of your program that might be confusing to others, especially if you're sharing with an audience of beginner programmers. If you do comment a line of code, your comment should explain the code accurately but in more human language.
+Of the options, we think this is the most clear:
+// Increases x position by speed, capping at 100
+var supermanX = max(supermanX + speed, 100);
+
+
+
