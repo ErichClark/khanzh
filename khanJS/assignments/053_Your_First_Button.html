@@ -7,45 +7,50 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Your First Button</h1>
+		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Your First Button<br>
+			挑戰：你的第一個按鈕</h1>
 		
-		<h2>Step 1: Is the mouse pressed?</h2>
+		<h2>Step 1: Is the mouse pressed?<br>
+			第一步：滑鼠有按下去嗎？</h2>
+			
 		<p class ="objective">
 			Buttons often change color when they're pressed, so that the user realizes they've pressed something. In this challenge, you'll change the code so that this button turns red when you press it. For this first step, add an if that colors the button red when you press the mouse anywhere on the canvas.<br>
-			
+			點擊按鈕之後，按鈕通常會改變顏色，讓使用者知道確實有點到東西。在這個挑戰裡，你需要更改程式碼，使按鈕被點擊後轉為紅色。首先，加入if條件，使得滑鼠在畫布任意處點擊後，按鈕即轉為紅色。
 		</p> 
 		<pre class="prettyprint">
 var draw = function() {
-    fill(0, 255, 68); // start color
+    fill(0, 255, 68); // start color 開始 上色
 	if (<span class="boxorange">     </span>) {
-		fill(<span class="boxpink">     </span>); // new color!
+		fill(<span class="boxpink">     </span>); // new color! 新增 顏色
 	}
-    rect(0, 0, 400, 200);  // the button
+    rect(0, 0, 400, 200);  // the button 按鈕
 
-    // The button text
+    // The button text 按鈕文字
     fill(0, 0, 0);
     textSize(30);
-    text("Press me!", 145, 115);
+    text("Press me!", 145, 115); // "Press me!" = “按我”
 };
 		</pre>
 		
-		<h2>Step 2: But WHERE is the mouse pressed?</h2>
+		<h2>Step 2: But WHERE is the mouse pressed?<br>
+			第二步：滑鼠游標到底點到哪裡呀？</h2>
+		
 		<p class ="objective">
 			Now you'll make it act more like a button - it should only change color if the user presses on the button, not outside of it. Add another check in the if to make sure that the current y position of the mouse is in the top half of the canvas. Draw it out on a piece of paper if it helps.<br>
-			
+			現在，你要做出更像按鈕的東西﹣只有點到按鈕才會改變按鈕顏色，點擊按鈕之外的範圍並無任何作用。在if條件裡增加一項檢查，確認滑鼠游標的y座標是否落在畫布的上半段。畫在紙上也許會更好理解，可以試試看。
 		</p>
 		<pre class="prettyprint">
 var draw = function() {
-    fill(0, 255, 68); // start color
+    fill(0, 255, 68); // start color 開始 上色
 	if (.... && <span class="boxblue">     </span>) {
-		fill(....); // new color!
+		fill(....); // new color! 新增 顏色
 	}
-    rect(0, 0, 400, 200);  // the button
+    rect(0, 0, 400, 200);  // the button 按鈕
 
-    // The button text
+    // The button text 按鈕文字
     fill(0, 0, 0);
     textSize(30);
-    text("Press me!", 145, 115);
+    text("Press me!", 145, 115); // "Press me!" = “按我”
 };
 		</pre>
 		

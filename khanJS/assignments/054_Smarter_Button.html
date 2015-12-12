@@ -7,26 +7,29 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Smarter Button</h1>
+		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Smarter Button<br>
+		挑戰：更聰明的按鈕</h1>
 		
-		<h2>Where is the mouse pressed?</h2>
+		<h2>Where is the mouse pressed?<br>
+			</h2>
+		
 		<p class ="objective">
-			Right now, if you press anywhere on the canvas, the button will change color (Try it!). We want the button to change color only when we press inside of it. To do that, you'll need to use comparison operators (>, <) with the current mouse x and mouse y position. You'll have to check multiple conditions (like that the x is greater than one number but less than another), so you'll also use &&.<br>
-			
+			Right now, if you press anywhere on the canvas, the button will change color (Try it!). We want the button to change color only when we press inside of it. To do that, you'll need to use comparison operators (&gt;, &lt;) with the current mouse x and mouse y position. You'll have to check multiple conditions (like that the x is greater than one number but less than another), so you'll also use &amp;&amp;.<br>
+			現在，如果你在畫布的任何地方點擊滑鼠，該按鈕將會轉換顏色（試試看吧！）。但是我們希望只有在點到按鈕範圍內時，按鈕才轉換顏色。因此，我們需要使用比較表示式(&gt;, &lt;)來比較滑鼠游標當下的x座標以及y位置。因為你需要檢查多個情況（比如當x大於某個數值，但是小於某個數值），所以需要用到&amp;&amp;。
 		</p> 
 		<pre class="prettyprint">
 var draw = function() {
-    fill(0, 255, 68); // start color
+    fill(0, 255, 68); // start color 開始 上色
 
-    if (mouseIsPressed && <span class="boxorange">     </span> && <span class="boxpink">     </span> && <span class="boxblue">     </span> && <span class="boxred">     </span>) { 
-        fill(33, 112, 52); // click color
+    if (mouseIsPressed &amp;&amp; <span class="boxorange">     </span> &amp;&amp; <span class="boxpink">     </span> &amp;&amp; <span class="boxblue">     </span> &amp;&amp; <span class="boxred">     </span>) { 
+        fill(33, 112, 52); // click color 點擊 上色
     }
-    rect(50, 150, 250, 100);  // the button
+    rect(50, 150, 250, 100);  // the button 按鈕
 
-    // The button text
+    // The button text 按鈕文字
     fill(0, 0, 0);
     textSize(30);
-    text("PRESS ME!", 93, 193);
+    text("PRESS ME!", 93, 193); // "PRESS ME!" = “按我”
 };
 		</pre>
 		

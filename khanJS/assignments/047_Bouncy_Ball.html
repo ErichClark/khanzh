@@ -7,41 +7,43 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Bouncy Ball</h1>
+		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Bouncy Ball<br>挑戰：彈彈球 </h1>
 		
-		<h2>Step 1: Bounce off the floor!</h2>
+		<h2>Step 1: Bounce off the floor!<br>
+			第一步：地面反彈！</h2>
 		<p class ="objective">
 			Our ball is moving down the screen, but it keeps going down forever. Add an if statement to make it reverse direction once it gets to the bottom of the screen. Remember you can click restart to re-run the program from the beginning. <br>
-			
+			我們的球正在熒幕上向下移動，而它永遠都是往下移。加一個假設述句來使它碰到熒幕底的時候反方向移動。記得你可以按重新開始來令程式從開端重新運行。
 		</p> 
 		<pre class="prettyprint">
-		
-// position of the ball
+// position of the ball 球的位置
 var y = 0;
-// how far the ball moves every time
-var speed = 2;
+// how far the ball moves every time 每一次球移動的距離
+var speed = 2; // "speed" = "速度"
 
 var draw = function() {
 	background(127, 204, 255);
 	fill(66, 66, 66);
 	ellipse(200, y, 50, 50);
     
-	// move the ball
+	// move the ball 移球
 	y = y + speed;
    
-	if (y > <span class="boxorange">     </span>){
+	if (y &gt; <span class="boxorange">     </span>){
 		speed = -<span class="boxpink">     </span>;
 	}
 };
 	</pre>
 		
-		<h2>Step 2: Bounce off the ceiling!</h2>
+		<h2>Step 2: Bounce off the ceiling!<br>
+			第二步：天花板反彈！</h2>
 		<p class ="objective">
-			Okay, now let's get the ball to reverse once it hits the ceiling too, so that it keeps going down and up forever.
+			Okay, now let's get the ball to reverse once it hits the ceiling too, so that it keeps going down and up forever.<br>
+			好，現在就來使球一碰到天花板的時候逆轉，好讓它永遠地一直彈上彈下。
 		</p>
 		<pre class="prettyprint">
 		
-if (y < <span class="boxorange">     </span>){
+if (y &lt; <span class="boxorange">     </span>){
     speed = <span class="boxpink">     </span>;
 }
 		

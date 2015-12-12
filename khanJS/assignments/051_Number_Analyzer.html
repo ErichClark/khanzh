@@ -7,50 +7,51 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Number Analyzer</h1>
-		<p class="objective">
-			DESCRIPTION
-		</p>
+		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Number Analyzer<br>
+		挑戰：數字分析程式</h1>
 		
-		<h2>Step 1: Play with the number</h2>
+		<h2>Step 1: Play with the number<br>
+		第一步：跟數字玩游戲</h2>
 		
 		<p class ="objective">
 			Our goal for this challenge is to write a number analyzer program that: displays the number assigned to “theNumber”, and draws a rectangular outline to show whether “theNumber” is positive, negative or zero.<br>
-			
+			我們的挑戰目標是要寫一個數字分析程式來顯示賦予 “數字” 裏的數字，然後畫出一個矩形來展示 “數字” 究竟是正數、負數、還是零。
 		</p>
 		<ul>
-			<li> Positive numbers are numbers that are larger than zero.<br>
+			<li> Positive numbers are numbers that are larger than zero.<br>正數是大於零的數。
 			</li>
-			<li> Negative numbers are numbers that are smaller than zero.<br>
+			<li> Negative numbers are numbers that are smaller than zero.<br>負數是少於零的數。
 			</li>
-			<li> Zero isn't positive and it also isn't negative. The only number that is zero is zero.<br>
+			<li> Zero isn't positive and it also isn't negative. The only number that is zero is zero.<br>零不是正也不是負。唯一是零的數便是零。
 			</li>
 		</ul>
 		<p> Right now, the outline is drawn around ''It's positive'' to show that 100 is positive (because 100 is larger than zero), but our program is not very smart yet. If we change the number, assigned to theNumber, to a number that is not positive, then ''It's positive'' will still be outlined (even though it won't be true anymore), but the correct text (''It's negative'' or ''It's zero'') will not be outlined.<br>
-		</p>
+			現在，外框正畫於 “它是正數” 來展示 100 是正（因爲 100 大於零），但我們的程式還不夠聰明。假若我們改變數字，將一個不是正數的數值賦予 “數字”，''它是正數'' 還是會被框着（即使那不是正確的），但正確的文字（“它是負數”' 或 “它是零”'）卻不會被框着。</p>
 		<p> Read through the code now, and then change the number assigned to theNumber to prove that it's not very smart (yet!)<br>
+			現在讀一讀你的程式碼，然後將賦予 “數字” 的數字改掉來證明程式（目前）不太聰明！
 		</p>
 		
 		<pre class="prettyprint">
-var theNumber = <span class="boxpink">     </span>;
+var theNumber = <span class="boxpink">     </span>;  // theNumber = “數字”
 
 fill(0, 0, 0);
 textSize(30);
-text("Analysis of: " + theNumber, 10, 36);
+text("Analysis of: " + theNumber, 10, 36); // “Analysis of “ = “分析”
 
-text("It's positive", 10, 90);
-text("It's negative", 10, 140);
-text("It's zero", 10, 190);
+text("It's positive", 10, 90); // "It's positive " = “它是正數”
+text("It's negative", 10, 140); // "It's negative " = “它是負數” 
+text("It's zero", 10, 190); // "It's a zero " = “它是零”
 
 noFill();
 rect(5, 60, 200, 40); 
 		</pre>
 		
-		<h2>Step 2: Make all the outlines</h2>
+		<h2>Step 2: Make all the outlines<br>
+			第二步：造所有的外框</h2>
 		
 		<p class ="objective">
 			Right now, there's only an outline for ''It's positive''. To make our program smart, we'll need to be able to outline any of the results. Add a rectangle to outline ''It's negative'', and add another rectangle to outline ''It's zero''.<br>
-			
+			現在，只有 “它是正數” 有框。要令我們的程式聰明，我們要能夠框着任何結果。加一個矩形外框給 “它是負數” 和另一個矩形外框給 “它是零”。
 		</p>
 		<pre class="prettyprint">
 rect(5, 60, 200, 40);
@@ -58,20 +59,27 @@ rect(5, ...., 200, 40);
 rect(5, ...., 200, 40);
 		</pre>
 		
-		<h2>Step 3: Make it smart!</h2>
+		<h2>Step 3: Make it smart!<br>
+			第三步：令它聰明！</h2>
 		
 		<p class="objective">
-			Now use if statements, and the comparison operators you just learned, to control when each outline is drawn.
+			Now use if statements, and the comparison operators you just learned, to control when each outline is drawn.<br>
+			現在用 if 述句和你剛學會的比較運算子來控制在什麼時候畫外框。
 		</p>
 		<p>
-			Try assigning theNumber different numbers, to make sure your program works. Make sure that:
+			Try assigning theNumber different numbers, to make sure your program works. Make sure that:<br>
+			試賦不同數值予“數字”。要保證程式能順利執行，請確定：
 		</p>
+		
 		<ul>
 			<li> the outline around ''It's positive'' is only drawn when theNumber is positive.<br>
+				只當“數字” 是正數時才畫“它是正數” 的外框。
 			</li>
 			<li> the outline around ''It's negative'' is only drawn when theNumber is negative.<br>
+				只當“數字” 是負數時才畫“它是負數” 的外框。
 			</li>
 			<li> the outline around ''It's zero'' is only drawn when theNumber is zero.<br>
+				只當“數字” 是零時才畫“它是零” 的外框。
 			</li>
 		</ul>
 

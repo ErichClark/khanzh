@@ -7,13 +7,17 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Your First Painting App</h1>
+		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: Your First Painting App<br>
+			挑戰：你的第一個繪畫程式</h1>
 		
-		<h2>Step 1: Is the mouse pressed?</h2>
+		<h2>Step 1: Is the mouse pressed?<br>
+			第一步：滑鼠按下了嗎？</h2>
+		
 		<p class ="objective">
 			Try moving your mouse over the canvas. Do you see the circles follow your mouse? Do you notice how it's hard to draw a picture because the computer never stops drawing circles? Let's fix this by making the program draw circles only if your mouse is pressed! <br>
-		
+			試試懸停鼠標在畫布上。看見圓圈跟著你的鼠標嗎？注意到要畫圖有多難皆因電腦不停在畫圓圈吧？來將這修改一下，令程式只當滑鼠被按下的時候才畫圓圈！
 		</p> 
+		
 		<pre class="prettyprint">
 var draw = function() {
     if (….) {
@@ -22,10 +26,12 @@ var draw = function() {
 }
 		</pre>
 		
-		<h2>Step 2: Add some color!</h2>
+		<h2>Step 2: Add some color!<br>
+		第二步：加些顔色！</h2>
+		
 		<p class ="objective">
 			Awesome! How's it look? Now, fill the circles in with a color and remove the stroke, so it's more like a paintbrush.<br>
-			
+			好棒！看起來怎樣？現在，將圓圈填色和除去圓圈外框，讓它更像刷筆。
 		<pre class="prettyprint">
 noStroke();
 fill(...., ...., ....);
