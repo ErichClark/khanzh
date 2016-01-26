@@ -7,18 +7,24 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-file-text-o fa-3x"></i> Review: Looping</h1>
+		<h1><i class="fa fa-file-text-o fa-3x"></i> 
+			Review: Looping <br>
+			複習：迴圈
+		</h1>
+
+		<p class ="objective"><em>
+			This is a review of what we covered in this tutorial on loops.<br>
+			這份資料是複習我們在迴圈課程裡所學的內容。
+		</em></p> 
 
 		<p class ="objective">
-			<em>This is a review of what we covered in this tutorial on loops.<br> </em>
-		</p> 
-
-		<p class ="objective">
-			When we're writing programs, we often find that we want to repeat a bit of code over and over, or repeat it but change something about it each time. To save ourselves from writing all that code, we can use a loop. JavaScript has two kinds of loops, a while loop and a for loop.
+			When we're writing programs, we often find that we want to repeat a bit of code over and over, or repeat it but change something about it each time. To save ourselves from writing all that code, we can use a loop. JavaScript has two kinds of loops, a while loop and a for loop. <br>
+			在寫程式的時候，我們時常會發現想要一再重覆部分的程式碼，或是每次在做重覆時做一點修改。使用迴圈可以讓我們不必編寫所有的程式碼。Javascript程式語言有兩種迴圈：while迴圈與for迴圈。
 		</p>
 		
 		<p class ="objective">
-			A while loop is a way to repeat code until some condition is false. For example, this while loop will display the value of y at (30, y) as long as y is less than 400. The loop adds 20 to y each time it runs, so that y starts off at 40 but then increments to 60, 80, 100, 120, etc.
+			A while loop is a way to repeat code until some condition is false. For example, this while loop will display the value of y at (30, y) as long as y is less than 400. The loop adds 20 to y each time it runs, so that y starts off at 40 but then increments to 60, 80, 100, 120, etc. <br>
+			while迴圈是一種重覆程式碼的方法，直到碰到「假」的條件。例如，只要y的值小於400，這個while迴圈就會讓y的值顯示在(30, y)。迴圈每次執行的時候會將y的值加20，因此y從40開始，但是會增量變成60、80、100、120…等等。
 		</p>
 		
 		<pre class="prettyprint">
@@ -30,7 +36,8 @@ while (y &lt; 400) {
 		</pre>
 		
 		<p class ="objective">
-			It's important that the condition inside the parenthesis becomes false at some point - otherwise we'll have what's known as an infinite loop! That's what would happen if we removed y += 20, because y would be 40 forever, and always be less than 400, and the program would never know when to stop.
+			It's important that the condition inside the parenthesis becomes false at some point - otherwise we'll have what's known as an infinite loop! That's what would happen if we removed y += 20, because y would be 40 forever, and always be less than 400, and the program would never know when to stop. <br>
+			當括號內的條件變成「假」的時候很重要，否則我們做的就會是所謂的無限迴圈！也就是當我們移除y += 20後會得到的結果，因為y永遠都會是40，而且永遠小於400，而程式就不知道什麼時候該停止。
 		</p>
 		
 		<pre class="prettyprint">
@@ -41,7 +48,8 @@ while (y &lt; 400) {
 		</pre>
 		
 		<p class ="objective">
-			The for loop is similar to a while loop, but with a more specialized syntax. Programmers invented the for loop when they realized they were always doing the same three things- creating loop counter variables (like y above), incrementing them by some amount, and checking that they're less than a value. A for loop syntax has special places for each of those three things. Here's the same loop as the first while loop above, as a for loop:
+			The for loop is similar to a while loop, but with a more specialized syntax. Programmers invented the for loop when they realized they were always doing the same three things- creating loop counter variables (like y above), incrementing them by some amount, and checking that they're less than a value. A for loop syntax has special places for each of those three things. Here's the same loop as the first while loop above, as a for loop: <br>
+			for迴圈和while迴圈相似，只是多了一個更特定的語法。程式設計師發明for迴圈是因為他們發現自己一直在做同樣的三件事：設計迴圈計數器變數（如上面提到的y）、在變數上增加同樣的量，以及確認變數少於某個值。for迴圈語法在這三種情況中都有特定的位置。這是和上面第一個while迴圈一樣的迴圈，以for迴圈呈現：
 		</p>
 		
 		<pre class="prettyprint">
@@ -51,11 +59,15 @@ for (var y = 40; y &lt; 400; y += 20) {
 		</pre>
 		
 		<p class ="objective">
-			Loops can also be nested. It's actually very common to nest for loops, especially in 2-d drawings, because it makes it easy to draw grid-like shapes. When we nest a loop inside a loop, we're telling the program to "do this thing X many times, and for each time you do that, also do this other thing Y many times." Think about drawing a grid- we'd want to tell the program to "create a column 10 times, and for each column, also create 15 cells inside of it." Here's how you can use nested for loops to achieve that:
+			Loops can also be nested. It's actually very common to nest for loops, especially in 2-d drawings, because it makes it easy to draw grid-like shapes. When we nest a loop inside a loop, we're telling the program to "do this thing X many times, and for each time you do that, also do this other thing Y many times." Think about drawing a grid- we'd want to tell the program to "create a column 10 times, and for each column, also create 15 cells inside of it." Here's how you can use nested for loops to achieve that: <br>
+			迴圈也可以是巢狀的。其實巢狀for迴圈非常普遍，尤其是在平面繪圖上，因為這麼做就可以輕易畫出格狀圖。當我們在一個迴圈裡巢狀迴圈時，我們就是在告訴程式「做這件X很多次，而每次做的時候，同時也做這件Y很多次。」想一想畫格子，我們會想告訴程式「畫10個欄位，每畫一次欄位，同時也在裡面做出15個格子」。你可以運用這個巢狀for迴圈來達成目的：
 		</p>
 		
 		<pre class="prettyprint">
-for (var col = 0; col &lt; 10; col++) {
+// row = 列 
+// col = 欄
+
+for (var col = 0; col &lt; 10; col++) {  
     for (var row = 0; row &lt; 15; row++) {
         rect(col*20, row*20, 20, 20);
     }
@@ -63,7 +75,8 @@ for (var col = 0; col &lt; 10; col++) {
 		</pre>
 		
 		<p class ="objective">
-			When should you use a for loop versus a while loop? That's up to you. Many programmers prefer for loops because it's harder to accidentally create an infinite loop (because it's harder to forget to increment your counter variable), but sometimes a while loop might make more sense. Try them both!
+			When should you use a for loop versus a while loop? That's up to you. Many programmers prefer for loops because it's harder to accidentally create an infinite loop (because it's harder to forget to increment your counter variable), but sometimes a while loop might make more sense. Try them both! <br>
+			你應該在什麼時候用for迴圈或while迴圈呢？你自己決定就可以了。很多程式設計師偏好for迴圈，因為比較不會意外做出無限迴圈（因為要忘記在你的計數器變數上增量很難），但是有時候用while迴圈可能比較好理解。兩種都試看看吧！
 		</p>
 
 		

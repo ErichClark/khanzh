@@ -6,233 +6,259 @@
 		<link type="text/css" rel="stylesheet" href="../../css/khanStyle.css">
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
+	
 	<body>
-		<h1><i class="fa fa-star fa-3x"></i>Quiz: Clean Code<br> </h1>
+		<h1><i class="fa fa-star fa-3x"></i>
+			Quiz: Clean Code<br> 
+			測驗：簡潔的程式碼
+		</h1>
 
-		<p class="objective"> 
-		<em> Check if you have a good idea of what makes JavaScript code readable and understandable.<br>
-		
+		<p class="objective"> <em> 
+			Check if you have a good idea of what makes JavaScript code readable and understandable.<br>
+			檢測你是否對如何使JavaScript程式碼更容易理解及閱讀有概念。
 		</em></p>
+		
 		<h3> Question 1:</h3>	
 		<p class="objective"> 
 			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?<br>
-			
-		</p>	
+			根據我們所推薦的JavaScript程式編碼風格慣例，下列哪段程式碼是最容易被閱讀的？
+		</p>
+		
 		<pre class="prettyprint">
 // addUp
+// 相加
 		
-// Answer 1
+// 1
 var addUp = function(a, b) {
   var c = a + b;
   return c;
 };
 
-// Answer 2
+// 2
 var addUp = function(a, b) {
 var c = a + b;
 return c;
 };
 
-// Answer 3
+// 3
 var addUp = function(a, b) { var c = a + b; return c; };
 		</pre>
+		
 		<p class = "hiddenHint"> 
 			According to most JavaScript coding style guidelines, you should put the body of your function definition on a different line from the header of the function definition. Also, you should indent the body one level, so that you can easily see that the code is inside the function definition. Therefore, Answer 1 is the most readable.<br> <br>
-			
+			根據大多數的Javascript程式編碼風格指南，你必須將函數定義的主體與函數定義的開頭放置於不同行。此外，你也必須將整個主體往後退一格，以便你能清楚地看到函數定義裡的程式碼。因此，第一項答案是最容易閱讀的。
 		</p>
 		
 		<h3>Question 2:</h3>
 		<p class="objective"> 
 			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?<br>
-			
+			根據我們所推薦的JavaScript程式編碼風格慣例，下列哪段程式碼是最容易被閱讀的？
 		</p>
+		
 		<pre class="prettyprint">
 // 1
-for (var i = 0; i < 10; i++) {
+for (var i = 0; i &lt; 10; i++) {
    println(i);
 }
 
 // 2
-for (var i = 0; i < 10; i++) { 
+for (var i = 0; i &lt; 10; i++) { 
 println(i);
 }
 
 // 3
-for (var i = 0; i < 10; i++) { println(i); }
+for (var i = 0; i &lt; 10; i++) { println(i); }
 		</pre>
+		
 		<p class = "hiddenHint"> 
 			According to most JavaScript coding style guidelines, you should put the body of your loop on a different line from the header of the for loop. Also, you should indent the body of the for loop one level, so that you can easily see that the code is inside the for loop. Therefore, Answer 1 is the most readable.<br>
-			
+			根據大多數的Javascript程式編碼風格指南，你必須把迴圈的主體與迴圈的開頭放置於不同行。還有，你也必須將for迴圈的主體往後退一格，以便你能清楚地看到for迴圈裡的程式碼。所以，第一項答案是最容易閱讀的。
 		</p>
 	
 		<h3>Question 3:</h3>
 		<p class="objective"> 
 			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?<br>
-			
+			根據我們所推薦的JavaScript程式編碼風格慣例，下列哪段程式碼是最容易被閱讀的？
 		</p>
+		
 		<pre class="prettyprint">
-// Answer 1
-if (x > 2) {
+// 1
+if (x &gt; 2) {
 println(x);
 }
 
-// Answer 2
-if (x > 2) {println(x);}
+// 2
+if (x &gt; 2) {println(x);}
 
-// Answer 3
-if (x > 2) {
+// 3
+if (x &gt; 2) {
   println(x);
 }	
 		</pre>
+		
 		<p class = "hiddenHint"> 
 			According to most JavaScript coding style guidelines, you should put the body of your if statement on a different line from the condition of the if statement. Also, you should indent the body one level, so that you can easily see that the code is inside the if statement. Therefore, Answer 3 is the most readable.<br>
-			
+			根據大多數的Javascript程式編碼風格指南，你必須把if述句的主體與假設條件放置於不同行。還有，你也必須將整個主體往後退一格，以便你能清楚地看到if述句裡的程式碼。所以，第三項答案是最容易閱讀的。
 		</p>
 		
 		<h3>Question 4:</h3>
 		<p class="objective"> 
 			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?<br>
-			
+			根據我們所推薦的JavaScript程式編碼風格慣例，下列哪段程式碼是最容易被閱讀的？
 		</p>
+		
 		<pre class="prettyprint">
-// Answer 1
+// 1
 ellipse(x, y, 15, 5);
 
-// Answer 2
+// 2
 ellipse(x,y,15,5);
 
-// Answer 3
+// 3
 ellipse (x, y, 15, 5);	
 		</pre>
+		
 		<p class = "hiddenHint"> 
-			According to most JavaScript coding style guidelines, you should put spaces after the parameters in your function calls, and no spaces between the function name and the parentheses.
-Therefore, Answer 1 is the most readable.<br>
-			
+			According to most JavaScript coding style guidelines, you should put spaces after the parameters in your function calls, and no spaces between the function name and the parentheses. Therefore, Answer 1 is the most readable.<br>
+			根據大多數的Javascript程式編碼風格指南，你在呼叫函數時應該在參數後方加入空格，但不在函數名稱與括號之間加入空格。所以，第一項答案是最容易閱讀的。
 		</p>
 		
 		<h3>Question 5:</h3>
 		<p class="objective"> 
 			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here?<br>
-			
+			根據我們所推薦的JavaScript程式編碼風格慣例，下列哪段程式碼是最容易被閱讀的？
 		</p>
+		
 		<pre class="prettyprint">
-// Answer 1
+// 1
 var x = 5*i;
 
-// Answer 2
+// 2
 var x = 5 * i;
 
-// Answer 3
+// 3
 var x=5 * i;	
 		</pre>
+		
 		<p class = "hiddenHint"> 
 			According to most JavaScript coding style guidelines, you should put spaces before and after the assignment operator (=) and a space before and after mathematical operators (like *). Therefore, Answer 2 is the most readable.<br>
-			
+			根據大多數的Javascript程式編碼風格指南，你應該在賦值運算元（=）以及數學運算元（比如＊）的前與後均加入空格。所以，第二項答案是最容易閱讀的。
 		</p>
 		
 		<h3>Question 6:</h3>
 		<p class="objective"> 
 			Which of these code snippets is the most readable, according to the JavaScript coding style conventions that we recommend here? <br>
-
+			根據我們所推薦的JavaScript程式編碼風格慣例，下列哪段程式碼是最容易被閱讀的？
 		</p>
+		
 		<pre class="prettyprint">
-// Answer 1
-if (x>5 && y<10) {
+// 1
+if (x&gt;5 && y&lt;10) {
   rect(x, y, 10, 10);
 }
 
-// Answer 2
-if (x > 5 && y < 10) {
+// 2
+if (x &gt; 5 && y &lt; 10) {
   rect(x, y, 10, 10);
 }
 
-// Answer 3
-if (x>5&&y<10) {
+// 3
+if (x&gt;5&&y&lt;10) {
   rect(x, y, 10, 10);
 }	
 		</pre>
+		
 		<p class = "hiddenHint"> 
-			According to most JavaScript coding style guidelines, you should put spaces before and after logical operators (like &&) and a space before and after comparison operators (like >, <). Therefore, Answer 2 is the most readable.<br>
-			
+			According to most JavaScript coding style guidelines, you should put spaces before and after logical operators (like &&) and a space before and after comparison operators (like &gt;, &lt;). Therefore, Answer 2 is the most readable.<br>
+			根據大多數的Javascript程式編碼風格指南，你應該在邏輯運算元（比如＆＆）以及比較運算元（比如&gt;,&lt;）的前與後均加入空格。所以，第二項答案是最容易閱讀的。
 		</p>
 		
 		<h3>Question 7:</h3>
 		<p class="objective"> 
 			Which of these code snippets is the most readable and adheres to JavaScript naming conventions? <br>
-			
+			哪段程式碼是最容易閱讀且遵守 JavaScript程式語言的命名慣例的？
 		</p>
+		
 		<pre class="prettyprint">
-// Answer 1
+// 1
 var a = 10;
 var b = 200;
 var c = 300;
 ellipse(b, c, a, a);
 
-// Answer 2
-var sunSize = 10;
-var sunX = 200;
-var sunY = 300;
+// 2
+var sunSize = 10; // 太陽大小
+var sunX = 200; // 太陽X
+var sunY = 300; // 太陽Y
 ellipse(sunX, sunY, sunSize, sunSize);
 
-// Answer 3
+// 3
 var ss = 10;
 var sx = 200;
 var sa = 300;
 ellipse(sx, sy, ss, ss);	
 		</pre>
+		
 		<p class = "hiddenHint"> 
 			To make your code more readable, you should pick variable names that relate to the content they're storing, and that adhere to the JS variable naming guidelines (using camelCase for multiple words). Answer 2 is the most readable, because the variable names reflect the content they're storing, and they are camelCased:<br>
-			
+			為了使你的程式碼更容易被閱讀，你命名變數的方式必須與它所儲存的內容相關，且遵守JavaScript程式語言的變數命名指南（若變數由很多字組成時使用駝峰式大小寫）。第二項答案的程式碼是最容易閱讀的，因為變數的名稱反映了它所儲存的內容，並且使用駝峰式大小寫的命名方式。
 		</p>
 		
 		<h3>Question 8:</h3>
 		<p class="objective"> 
 			Let's say you wrote a program that animated a Superman flying across the screen. Which would be the best comment to put at the top?  <br>
-
+			假設你要寫一個超人在畫面上飛來飛去的動畫程式。下列哪行註解最適合放置於程式碼的最上方？ 
 		</p>
+		
 		<pre class="prettyprint">
-// Answer 1
-/* This program is so cool, you should vote it up.
+// 1
+/* This program is so cool, you should vote it up. 這個程式好酷哦，你一定要投票給它。
 */
 
-// Answer 2
-/* superman!!
+// 2
+/* superman!! 超人！！
 */
 
-// Answer 3
+// 3
 /* 
-This program animates Superman flying across the screen.
-The speed is controlled by variables at the top.
-Written in 2015 by @Batman.
+This program animates Superman flying across the screen. 這個程式將繪製在畫面中飛來飛去的超人。
+The speed is controlled by variables at the top. 上方的變數控制著他的速度。
+Written in 2015 by @Batman. 於2015年由@蝙蝠俠所編寫。
 */
 		</pre>
+		
 		<p class = "hiddenHint"> 
-			It's a great idea to put a multi-line comment at the top of your programs that describes what it does, gives the viewer any relevant instructions, and provides information on the author.
-The best comment of the ones provided is Answer 3.<br>
+			It's a great idea to put a multi-line comment at the top of your programs that describes what it does, gives the viewer any relevant instructions, and provides information on the author. The best comment of the ones provided is Answer 3.<br>
+			在程式的最上方放置多行註解來解釋程式的功能是一個很好的主意，給予讀者相關的指示，及提供作者的相關資訊。第三項答案是所有提供中最好的註解。
 		</p>
 		
 		<h3>Question 9:</h3>
 		<p class="objective"> 
 			In your Superman-animating program, there's a line that controls his speed. Which comment is the most clear? <br>
-			
+			在你的超人動畫程式裡，有一行用來控制他的速度。下列哪項註解是最清楚的？
 		</p>
+		
 		<pre class="prettyprint">
-// Answer 1
-// changes x 
+// supermanX = 超人X
+// speed = 速度
+		
+// 1
+// changes x  改變X
+var supermanX = max(supermanX + speed, 100); 
+
+// 2
+// Increases x position by speed, capping at 100  根據速度增加位置x，於100時停止
 var supermanX = max(supermanX + speed, 100);
 
-// Answer 2
-// Increases x position by speed, capping at 100
-var supermanX = max(supermanX + speed, 100);
 
-
-// Answer 3
-// Makes superman go wheeeee!
+// 3
+// Makes superman go wheeeee!  讓超人咻咻咻飛來飛去！
 var supermanX = max(supermanX + speed, 100);	
 		</pre>
+		
 		<p class = "hiddenHint"> 
 			It's a good idea to comment lines of your program that might be confusing to others, especially if you're sharing with an audience of beginner programmers. If you do comment a line of code, your comment should explain the code accurately but in more human language. Of the options, we think Answer 2 is the most clear. <br>
-			
+			在容易讓人混淆的程式中加入註解是一個好主意，尤其是當你要分享給程式編程初學者的時候。當你為程式碼加註時，你的註解應該要正確地解釋該段程式碼，且以更人性化的語言讓人明瞭。在所有的選項當中，我們認為第二項答案是最清楚的。
 		</p>
 		
 		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page </a></p>

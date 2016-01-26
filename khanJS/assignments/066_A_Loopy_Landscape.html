@@ -7,39 +7,44 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: A Loopy Landscape</h1>
+		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: A Loopy Landscape <br>
+			挑戰：迴圈風景
+		</h1>
 		
-		<h2>Step 1: Use a variable for the x position <br> </h2>
+		<h2>Step 1: Use a variable for the x position <br> 第一步：使用一個變數來記錄x的位置</h2>
 		
 		<p class ="objective">
 			In this challenge, you'll use a while loop to make this landscape fill the screen. As a first step, make a variable for the x position of the tree and grass images. <br>
-			
+			在這個挑戰裡，你需要一個「條件式」迴圈來使風景充滿整個畫面。首先，建立一個變數來記錄樹木以及草地的x座標。
 		</p> 
 		<pre class="prettyprint">
 background(144, 240, 234);
 
-// Draw the sun
+// Draw the sun 繪製太陽
 noStroke();
 fill(255, 140, 0);
 ellipse(335, 66, 70, 70);
 
-// Get images from library and remember in variables
-var grass = getImage("cute/GrassBlock");
-var tree = getImage("cute/TreeUgly");
+// Get images from library and remember in variables 從資料庫中取得畫面並記錄在變數裡。
+var grass = getImage("cute/GrassBlock"); // var 草地 = 取得畫面("可愛/草地區塊");
+var tree = getImage("cute/TreeUgly"); //  var 樹木 = 取得畫面("可愛/醜陋的樹");
 
-// Draw the tree and grass once
-image(grass, 0, 270);
-image(tree, 0, 200);
+// Draw the tree and grass once  繪製一次樹木以及草地
+image(grass, 0, 270); // grass = 草地
+image(tree, 0, 200); // tree = 樹木
 
 var <span class="boxorange">     </span> = 0;
 image(grass, <span class="boxorange">     </span>, 270);
 image(tree, <span class="boxorange">     </span>, 200);
 		</pre>
 		
-		<h2>Step 2: Use a while loop to change the x position</h2>
+		<h2>
+			Step 2: Use a while loop to change the x position <br>
+			第二步：使用「條件式」迴圈來改變x的位置。
+		</h2>
 		<p class ="objective">
 			Now, use a while loop to keep redrawing the tree and grass across the screen, changing the x position each time.<br>
-			
+			現在，使用一個「條件式」迴圈來重複繪製樹木及草地，並於每次執行中改變x座標，使風景充滿整個畫面。
 		</p>
 		<pre class="prettyprint">
 var <span class="boxorange">     </span> = 0;

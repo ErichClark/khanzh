@@ -7,20 +7,21 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star fa-3x"></i>Quiz: While Loops</h1>
+		<h1><i class="fa fa-star fa-3x"></i>Quiz: While Loops 測驗：While迴圈</h1>
 		
 		<h3>Question 1</h3>
-		<p class="objective"> What will this code output? </p>
+		<p class="objective"> What will this code output? <br>
+			這程式碼將會輸出什麼？</p>
 		<pre class="prettyprint">
 var i = 0;
 while(i &lt; 3) {
-    println("hi");
+   println(&#34;hi&#34;); // &#34;嗨&#34;
     i++;
 }
 		</pre>
 		<p class="objective"> 
-			Note: the println() function prints out a line of text with the value that you pass to it - so if you say println("Hi"), it will output: "Hi" 
-			
+			Note: the println() function prints out a line of text with the value that you pass to it - so if you say println("Hi"), it will output: "Hi" <br>
+			註：輸出至視窗控制台()函數輸出一行文字及你傳遞給它的值－所以若你說輸出至視窗控制台(“嗨”)，它將輸出：嗨。
 		</p>
 		<pre class="prettyprint">
 // 1
@@ -39,96 +40,99 @@ hi
 		</pre>
 		<p>
 			<!-- <small><span title="Each time the loop is executed, it will print out 'hi'."><i class="fa fa-life-ring"></i> hover for 1st hint</span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+			<small><span title="每次迴圈被執行時，它將會輸出&#34;嗨&#34;。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
 
 			<!-- <small><span title="Once the value of the i variable is equal to or greater than 3, the loop will stop executing."><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
+			<small><span title="一旦變數i的值大於或等於3時，迴圈將會停止執行。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
 			
 			<!-- <small><span title="The i variable is initialized to 0 at the beginning of the program, and is incremented by 1 each time the loop is executed."><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+			<small><span title="在程式開始時，變數i會被初始化為0，且隨著每次迴圈被執行而增加1。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
 
 			<!-- <small><span title="The first time the loop is executed, the println('hi'); line will print out 'hi', and then the i++ line will set i to 1."><i class="fa fa-life-ring"></i> hover for 4th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
+			<small><span title="第一次執行迴圈，輸出至視窗控制台(&#34;Hi&#34;);這一行將輸出”嗨”，然後i遞增指令行會將設i為1。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
 			
 			<!-- <small><span title="The second time the loop is executed, the println('hi'); line will print out 'hi', and then the i++ line will set i to 2."><i class="fa fa-life-ring"></i> hover for 5th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
+			<small><span title="第二次執行迴圈，輸出至視窗控制台(&#34;Hi&#34;);這一行將輸出”嗨”，然後i遞增指令行會將設i為2。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
 			
 			<!-- <small><span title="The third time the loop is executed, the println('hi'); line will print out 'hi', and then the i++ line will set i to 3."><i class="fa fa-life-ring"></i> hover for 6th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
+			<small><span title="第三次執行迴圈，輸出至視窗控制台(&#34;Hi&#34;);這一行將輸出”嗨”，然後i遞增指令行會將設i為3。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
 			
 			<!-- <small><span title="The loop will stop executing after that point, because the condition i < 3 is no longer true."><i class="fa fa-life-ring"></i> hover for 7th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
+			<small><span title="之後迴圈將會停止執行，因為i小於3的條件不再成立。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
 			
 			<!-- <small><span title="Once the program is done running, the while loop will have executed three times, and the final output will be Answer 1."><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
+			<small><span title="一旦程式執行完畢，while迴圈將被執行過3次，且最後輸出：答案為1。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
 
 		</p>
 		
 		<h3>Question 2</h3>
-		<p class="objective"> What will this code output? <br> </p>
+		<p class="objective"> What will this code output? <br> 
+			這程式碼將會輸出什麼？</p>
 		<pre class="prettyprint">
 var i = 0;
 while (i &lt; 3) {
-   println("hi");
+   println(&#34;hi&#34;); // &#34;嗨&#34;
    i++;
 }
-println("bye");
+println(&#34;bye&#34;); // &#34;再見&#34;
 		</pre>
-		<p class="objective"> Q? </p>		
+	
 		<p>
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for a hint  </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+			<small><span title="每次迴圈被執行時，它將會輸出&#34;嗨&#34;。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
 
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
+			<small><span title="一旦變數i的值大於或等於3時，迴圈將會停止執行。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+			<small><span title="在程式開始時，變數i會被初始化為0，且隨著每次迴圈被執行而增加1。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
 
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 4th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
+			<small><span title="第一次執行迴圈，輸出至視窗控制台(&#34;嗨&#34;);這一行將輸出&#34;嗨&#34;，然後i遞增指令行會將設i為1。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 5th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
+			<small><span title="第二次執行迴圈，輸出至視窗控制台(&#34;嗨&#34;);這一行將輸出&#34;嗨&#34;，然後i遞增指令行會將設i為2。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 6th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
+			<small><span title="第三次執行迴圈，輸出至視窗控制台(&#34;嗨&#34;);這一行將輸出&#34;嗨&#34;，然後i遞增指令行會將設i為3。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 7th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
+			<small><span title="之後迴圈將會停止執行，因為i小於3的條件不再成立。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 8th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第八個提示！ </span></small><br>
+			<small><span title="然後程式將會執行輸出至視窗控制台(&#34;再見&#34;);這一行，輸出&#34;再見&#34;。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第八個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
+			<small><span title="一旦程式執行完畢，while迴圈將被執行過3次，且最後輸出：答案為1"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
 		</p>
 		
 		<h3>Question 3</h3>
-		<p class="objective"> Q? </p>
+		<p class="objective"> What will this code output? <br> 
+			這程式碼將會輸出什麼？</p>
 		<pre class="prettyprint">
 var i = 0;
 while (i &lt; 0) {
-  println("hi");
+  println(&#34;hi&#34;); // &#34;嗨&#34;
 }
 		</pre>
-		<p class="objective"> Q? </p>		
+	
 		<p>
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for a hint  </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+			<small><span title="while迴圈只在當條件i小於0成立時才被執行。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
 
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
+			<small><span title="當程式跑到while迴圈時，若i不小於0，它將不會執行迴圈內的任何程式碼。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+			<small><span title="就在while迴圈之前，變數i被賦值為0。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
 
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
+			<small><span title="因為在while迴圈之前i被設為0，條件i小於0不成立，所以迴圈將不會被執行，且程式不會輸出任何東西。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
 		</p>
 		
 		<h3>Question 4</h3>
-		<p class="objective"> Q? </p>
+		<p class="objective"> What will this code output? <br> 
+			這程式碼將會輸出什麼？</p>
 		<pre class="prettyprint">
 var x = 3;
 var i = 0;
@@ -138,35 +142,36 @@ while (i &lt; 3) {
 }
 println(x);
 		</pre>
-		<p class="objective"> Q? </p>		
+		
 		<p>
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for a hint  </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+			<small><span title="這程式輸出變數x的值，且隨著每次迴圈被執行而增加1。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
 
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
+			<small><span title="只要變數i小於3就執行while迴圈。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+			<small><span title="變數i會初始為0，且隨著每次迴圈被執行而增加1。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
 
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 4th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
+			<small><span title="第一次執行迴圈，變數x被設為4（它原始的值加１），且變數i被設為１（它原始的值加１）。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 5th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
+			<small><span title="第二次執行迴圈，變數x被設為5（它之前的值加１），且變數i被設為2（它之前的值加１）。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 6th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
+			<small><span title="第三次執行迴圈，變數x被設為6（它之前的值加１），且變數i被設為3（它之前的值加１）。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 7th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
+			<small><span title="之後迴圈將會停止執行，因為i小於3的條件不再成立。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
+			<small><span title="在迴圈被執行了3次後，程式輸出x值為6。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
 		</p>
 		
 		<h3>Question 5</h3>
-		<p class="objective"> Q? </p>
+		<p class="objective"> What will this code output? <br> 
+			這程式碼將會輸出什麼？</p>
 		<pre class="prettyprint">
 var i = 3;
 while (i &lt; 6) {
@@ -174,35 +179,36 @@ while (i &lt; 6) {
   i += 1;
 }
 		</pre>
-		<p class="objective"> Q? </p>		
+		
 		<p>
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for a hint  </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+			<small><span title="每當迴圈被執行的時候，變數i的值就會出現。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
 
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
+			<small><span title="只要變數i的值大於或等於6，迴圈就會終止。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+			<small><span title="變數i的值在程式開始執行時被初始化為3，並在每個迴圈執行後遞增1個值。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
 
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 4th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
+			<small><span title="第一次執行迴圈時，列印行數(i)；這一行結果顯示為3，也就是i的初始值，接著i += 1會把i增加為4。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 5th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
+			<small><span title="迴圈執行第二次時，結果顯示為4，也就是i新的值，之後迴圈把i值設定成5。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 6th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
+			<small><span title="迴圈執行第三次時，結果顯示5，也就是i新的值，之後迴圈再把i值設成6。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 7th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
+			<small><span title="此時迴圈將停止執行，因為i&lt;6的條件已經不再被滿足。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
+			<small><span title="程式執行完畢後，結果將會顯示：答案 1。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
 		</p>
 		
-				<h3>Question 6</h3>
-		<p class="objective"> Q? </p>
+		<h3>Question 6</h3>
+		<p class="objective"> What will this code output? <br> 
+			這程式碼將會輸出什麼？</p>
 		<pre class="prettyprint">
 var i = 0;
 while (i &lt; 3) {
@@ -210,31 +216,31 @@ while (i &lt; 3) {
   i++;
 }
 		</pre>
-		<p class="objective"> Q? </p>		
+		
 		<p>
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for a hint  </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
+			<small><span title="每當迴圈執行結束，結果顯示變數i的值。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看提示！</span></small><br>
 
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 2nd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
+			<small><span title="只要變數i的值大於或等於3，迴圈就會終止。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第二個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 3rd hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
+			<small><span title="變數i的值在程式開始執行時被初始化為0，並在每個迴圈執行後遞增1個值。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第三個提示！ </span></small><br>
 
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 4th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
+			<small><span title="第一次執行迴圈時，列印行數(i)；這一行結果顯示為0，也就是i的初始值，接著i += 1會把i增加為4。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第四個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 5th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
+			<small><span title="迴圈執行第二次時，結果顯示為1，也就是i新的值，之後迴圈把i值設定成2。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第五個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 6th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
+			<small><span title="迴圈執行第三次時，結果顯示2，也就是i新的值，之後迴圈再把i值設成3。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第六個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for 7th hint </span></small><br> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
+			<small><span title="此時迴圈將停止執行，因為i&lt;3的條件已經不再被滿足。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看第七個提示！ </span></small><br>
 			
 			<!-- <small><span title="hint text"><i class="fa fa-life-ring"></i> hover for final hint </span></small> -->
-			<small><span title="hint text"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
+			<small><span title="程式執行完畢後，結果將會顯示：答案 3。"><i class="fa fa-life-ring"></i> 移鼠標到我這來看看答案！</span></small>
 		</p>
 		
 		<p><i class="fa fa-home fa-2x"></i><a href="../index_js.html"> Return to KhanZH Home Page </a></p>

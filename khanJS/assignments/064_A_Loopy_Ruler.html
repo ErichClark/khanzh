@@ -7,20 +7,23 @@
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: A Loopy Ruler</h1>
+		<h1><i class="fa fa-star-o fa-3x"></i>Challenge: A Loopy Ruler <br>
+			挑戰：迴圈尺</h1>
 		
-		<h2>Step 1: Loop it! </h2>
+		<h2>Step 1: Loop it! <br>
+			第一步：迴圈！</h2>
 		<p class ="objective">
 			See how we repeat the text() command 7 times, to draw ruler marks for the x coordinates along the top? Let's turn that into a while loop instead! Remember to think about: <br>
+			記得之前我們怎麼讓文字()命令重複執行7次，以便在上方X座標畫上尺規標記嗎？讓我們把它轉換成一個「條件式」迴圈吧！記得想想：
 		<ol>	
-			<li>What do you want to repeat each time?<br> </li>
-			<li>What value do you want to change each time?<br> </li> 
-			<li>When do you want to stop looping?<br> </li>
+			<li>What do you want to repeat each time?<br> 每一次的程式執行，你想要重複什麼？</li>
+			<li>What value do you want to change each time?<br> 每次改變哪個值？</li> 
+			<li>When do you want to stop looping?<br> 什麼時候停止迴圈？</li>
 		</ul>
 		
 		</p> 
 		<pre class="prettyprint">
-// a handy dandy ruler across the top
+// a handy dandy ruler across the top 位於上方好用方便的尺
 var x = 0;
 while (<span class="boxorange">     </span> &lt; <span class="boxpink">     </span>) {
 	text(<span class="boxorange">     </span>, <span class="boxorange">     </span>, 10);
@@ -28,9 +31,11 @@ while (<span class="boxorange">     </span> &lt; <span class="boxpink">     </sp
 }
 		</pre>
 		
-		<h2>Step 2: A loop for the side, too</h2>
+		<h2>Step 2: A loop for the side, too <br>
+			第二部：旁邊也要有迴圈</h2>
 		<p class ="objective">
 			Now let's do the same for y, so that we have a ruler going down the left side of our canvas too! It should be very similar to the loop you have for the x.<br>
+			現在，讓我們替y軸做出相同的尺規，這樣我們也有一把尺顯示在我們畫布的左方！它的操作其實與x軸的迴圈十分相似。
 			
 		</p>
 		<pre class="prettyprint">
