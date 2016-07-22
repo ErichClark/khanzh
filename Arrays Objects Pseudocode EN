@@ -1,0 +1,683 @@
+*
+Challenge: Favorite Fruits
+
+Make the array
+
+You're going to display your top 3 favorite fruits. To get started, make an array of them.
+
+Display them!
+
+Now, use the text() command to display each item on a different line, so that they're not overlapping.
+
+Show the length!
+
+Now display a header that says 'My top 3 favorite fruits', anywhere!
+
+My
+
+favorite fruits
+
+
+*
+Challenge: Favorite Animals
+
+Make the array
+
+You are going to display your top 3 favorite animals. To get started, make an array of them.
+
+Hint: The animal names are strings, so don't forget to write them between "quotation marks".
+
+XXXXX----Whoaaa! Such fluffy animals
+
+Look over them!
+
+In this step, you'll use a while loop to display each of the animals on the screen, using the text command. Make a counter variable to keep track of the name you are drawing, and use it to calculate a different y position each time, so that the names are spaced out in a list.
+
+Tip: Be careful with condition of your while loop, and make sure you increment the variable properly, otherwise your program will get stuck in an infinite loop.
+
+Add more animals!
+
+Now that you have a loop to display your array of animals, test it out by adding at least 2 more animals (5 total).
+
+
+*
+Challenge: Constellation Maker
+
+Add a star
+
+This program displays an array of stars based on two arrays, one of x positions and one of y positions. Add another star by adding a new number to each array.
+
+xPositions
+
+yPositions
+
+Add stars on click
+
+Now, make this program more dynamic, by making it add stars when the user clicks the mouse. Add a mouseClicked function that pushes a new x and y position onto the arrays based on the current mouse position (mouseX and mouseY), and then redraws the stars.
+
+Now that you’ve pushed the x and y positions of the mouse into the array, be sure to move the call to drawStars() into your mouseClicked() function, so that the stars will get re-drawn every time a new one is created.
+
+
+*
+Challenge: Recipe Card
+
+Customize the recipe
+
+What a boring recipe this is! Change the title and ingredients to one of your favorite recipes... though you may want to simplify it a bit!
+
+recipeTitle
+
+recipeServings
+
+recipeIngredients
+
+Bread
+
+Flour
+
+Water
+
+Serves
+
+Ingredients
+
+Make sure you change the ingredients!
+
+Make sure you have two ingredients in an array.
+
+Make it an object
+
+Now, instead of using three separate variables, make a single variable for the recipe that's an object, and store three properties on it.
+
+recipe
+
+title
+
+servings
+
+ingredients
+
+Now change the text commands to output data from the object variable, using dot notation.
+
+
+*
+Challenge: Picture Painter
+
+Change the initial paintbrush
+
+This program uses an object to describe a paintbrush with x, y, and image properties. Change the initial x and y, and pick a different image that would be fun to paint with.
+
+Tip: If you want to see all the images you can use, click on the string passed to getImage - the handy image picker will appear.
+
+paintBrush
+
+getImage
+
+imageMode
+
+image
+
+Make sure you change the initial image so it's not the green leaf anymore.
+
+Make sure you change the initial x position from its original value of 200.
+
+Make it paint!
+
+Now you'll actually make this program paint! Add a mouseMoved function that:
+
+- changes the paintbrush x and y properties based on the current mouse position, using the 
+mouseX and mouseY variables;
+
+- calls the painting function, paintCanvas;
+
+Tip: Check the documentation if you're not sure how to use mouseMoved.
+
+paintBrush
+
+Now that you're setting the new position for your image, call the paintCanvas function inside mouseMoved to paint the image on the canvas.
+
+
+*
+Challenge: Movie Reviews
+
+Display the review
+
+This program starts with an array of one movie, and displays the title. Now, make it so it also displays the review, in a smaller size, below the title.
+
+movies
+
+title
+
+review
+
+Puff the Magic Dragon
+
+Best movie ever!!
+
+textSize
+
+Instead of printing out the title twice, print the title once and the review once.
+
+Can you position the review so it's underneath the title, and has enough space between it and the title?
+
+Add a second movie
+
+Now, add another movie to the array.
+
+Display them all
+
+Now, to get both your movies displaying, use a for loop to iterate through the array and execute the text commands for each movie. If you don't remember how to iterate through arrays, re-watch the previous talk-through and/or Looping through Arrays.
+
+
+*
+Challenge: Double Rainbow
+
+Create a Rainbow object type that can describe the many rainbows in the world.
+
+Make a Rainbow object
+
+This program describes a rainbow in an object literal and then draws it. To make it easy for you to make lots of rainbows with the same kinds of properties, create a Rainbow object that stores an x, y, and radius.
+
+rainbow
+
+bigRainbow
+
+drawRainbow
+
+Initialize a new Rainbow
+
+Now that you've defined the object constructor, use it to make a rainbow and pass that rainbow to the draw function.
+
+Now that you’ve created a new Rainbow, pass that Rainbow into the call to drawRainbow().
+
+You should be able to delete the code for the original rainbow, now that you have the new fancy way of making Rainbows. Remember to delete both the code that creates the variable bigRainbow, and the code that draws the bigRainbow. But don't delete drawRainbow()!
+
+Double Rainbow!
+
+Now it's easy to make new Rainbows! Now make another rainbow with different properties.
+
+Now that you’ve created a second rainbow, make sure to draw it by calling drawRainbow with your second rainbow as the argument.
+
+
+*
+Challenge: SmileyFace
+
+Create a SmileyFace object with its own methods.
+
+Create a SmileyFace object
+
+We have a lovely function for drawing smiley faces, based on object literals that we pass to it. However, we'd like to use object oriented design instead, so that we can create instances and add methods. Start off by creating a SmileyFace constructor that stores centerX and centerY properties.
+
+faceObject
+
+drawSmiley
+
+Initialize a new SmileyFace
+
+Now that you've defined the object constructor, use it to make a face and pass that face to the draw function. Once you've done that, remove the original face drawing code.
+
+Add a draw method
+
+In this step, you'll turn the drawSmiley function into a draw method for the SmileyFace object prototype, so that you can call it on any SmileyFace instance. 
+
+You'll also have to modify the the code inside this draw method, so that it takes no arguments and gets all the properties using this instead of faceObj.
+
+As best practice, you should define everything about your object type first - the constructor and all its methods - and initialize instances of the object type after. Can you move your draw method definition to be right after the constructor, with nothing in between?
+
+Add a speak method
+
+Now, add a speak method that will allow you to make the SmileyFace talk. The speak method should accept a parameter - a string - and display that next to the smiley using the text command. Then call it to make sure it works!
+
+If you don't remember what a parameter is, it's a good time to rewatch the talk-through about them in the Functions section.
+
+speak
+
+More smileys! MORE!
+
+Now, make more smileys using your SmileyFace object, at different locations with different messages.
+
+
+*Challenge: Flower Grower
+
+Create a Flower object type that Sunflower and Tulip can inherit from.
+
+Add more flowers
+
+This program creates two flowers, tulip (an instance of the Tulip type) and sunflower (an instance of the Sunflower type). The drawScene function draws these flowers by calling their draw methods. The mouseClicked function makes these flowers change height, when you click the mouse, by calling their growBy methods.
+
+Play around with the program to see how it works. When you are done playing around:
+
+- add one more flower of the Tulip type
+
+- add one more flower of the Sunflower type
+
+- modify the drawScene() function, so that it also draws your new flowers.
+
+Where you place the code to create a new object instance, like a new flower, is important. A new object instance should be created somewhere below its constructor, but above any code that uses one of its methods or properties.
+
+OBJECT TYPES
+
+Flower Object Type
+
+Tulip Object Type
+
+petals
+
+create object instances
+
+Make the new flowers grow
+
+In the previous step you added two new flowers and drew them. Now you need to make your new flowers grow.
+
+Recall that, the mouseClicked function makes flowers change height, when you click the mouse, by calling their growBy methods.
+
+Modify the mouseClicked() function, so that it also changes the height of your new flowers.
+
+Make a Flower object
+
+The Tulip and the Sunflower object types share a lot in common - the constructors are the same, and the growBy methods are the same. They're also conceptually similar - both are types of flowers! Now, let's use inheritance to make both these object types extend from a Flower object type.
+
+Make a constructor for the Flower object type.
+
+Where you place the code for a new object type, like Flower, is important. It should be placed somewhere above all of the object types that want to inherit from it.
+
+Define the growBy method
+
+The Tulip and Sunflower object types have identical code in their growBy methods. If we wanted to create a new type of flower, we would want the new flower type to use the same code too.
+
+Add a growBy method to the Flower prototype, so that all flowers will be able to inherit it. The code should be the same as the growBy methods on the Tulip and Sunflower prototypes.
+
+When your code makes changes to an object type's prototype, like adding the method growBy to the Flower prototype, it is good practice to place the code just below the object type's constructor.
+
+Inherit from Flower!
+
+Now let's actually put your Flower object type to work. Change the Tulip constructor so that it calls the Flower constructor with its arguments, and base the Tulip prototype on the Flower prototype so that it inherits the growBy method.
+
+To avoid errors and prevent overwriting the methods on the Tulip prototype:
+
+- the Tulip constructor should be placed above all of the methods on the Tulip prototype
+
+- the statement for Tulip to inherit from the Flower prototype, should be placed immediately after the Tulip constructor
+
+You may need to press 'Restart' for the environment to recognize your changes to the Tulip object.
+
+Inherit from Flower - AGAIN!
+
+Now let's do the same thing for Sunflower, so that both of your object types are inheriting from the Flower object type.
+
+Change the Sunflower constructor so that it calls the Flower constructor with its arguments, and base the Sunflower prototype on the Flower prototype so that it inherits the growBy method.
+
+To avoid errors and prevent overwriting the methods on the Sunflower prototype:
+
+- the Sunflower constructor should be placed above all of the methods on the Sunflower prototype
+
+- the statement for Sunflower to inherit from the Flower prototype, should be placed immediately after the Sunflower constructor
+
+You may need to press 'Restart' for the environment to recognize your changes to the Sunflower object.
+
+Change the Flowers
+
+The great thing about object-oriented design and inheritance is that we can now change things on Flower, and everything that inherits from it should change too.
+
+Test out the inheritance by changing the growBy method, so that it causes flowers to grow by twice the inputted amount.
+
+You may need to press 'Restart' for the environment to recognize your changes to the Flower object.
+
+
+*
+Review: Object-Oriented Design
+
+This is a review of what we covered in this tutorial on object-oriented design.
+
+When we create programs, we often find that we want to create many different objects that all share similar properties - like many cats, that have slightly different fur color and size, or many buttons, with different labels and positions. We want to be able to say "this is generally what a cat is like" and then say "let's make this specific cat, and this other cat, and they'll be similar in some ways and different in a few ways as well." In that case, we want to use object-oriented design to define object types and create new instances of those objects.
+
+To define an object type in JavaScript, we first have to define a "constructor function". This is the function that we'll use whenever we want to create a new instance of that object type. Here's a constructor function for a Book object type:
+
+Book 
+
+title
+
+author
+
+numPages
+
+currentPage
+
+The function takes in arguments for the aspects that will be different about each book - the title, author, and number of pages. It then sets the initial properties of the object based on those arguments, using the this keyword. When we use this in an object, we are referring to the current instance of an object, referring to itself. We need to store the properties on this to make sure we can remember them later.
+
+To create an instance of a Book object, we declare a new variable to store it, then use the new keyword, followed by the constructor function name, and pass in the arguments that the constructor expects:
+
+Robot Dreams
+
+Isaac Asimov
+
+We can then access any properties that we stored in the object using dot notation:
+
+I loved reading
+
+I loved reading Robot Dreams
+
+is my fav author
+
+Isaac Asimov is my fav author
+
+Let's contrast this for a minute, and show what would have happened if we didn't set up our constructor function properly:
+
+Little Brother
+
+Cory Doctorow
+
+I loved reading undefined
+
+undefined is my favorite author
+
+If we pass the arguments into the constructor function but do not explicitly store them on this, then we will *not* be able to access them later! The object will have long forgotten about them.
+
+When we define object types, we often want to associate both properties *and behavior* with them - like all of our cat objects should be able to meow() and eat(). So we need to be able to attach functions to our object type definitions, and we can do that by defining them on what's called the object prototype:
+
+readItAll
+
+You read 
+
+pages
+
+It's like how we would define a function normally, except that we hang it off the Book's prototype instead of just defining it globally. That's how JavaScript knows that this is a function that can be called on any Book object, and that this function should have access to the this of the book that it's called on.
+
+We can then call the function (which we call a method, since it's attached to an object), like so:
+
+Animal Farm
+
+George Orwell
+
+You read 112 pages!
+
+Remember, the whole point of object-oriented design is that it makes it easy for us to make multiple related objects (object instances). Let's see that in code:
+
+Pirate Cinema
+
+Cory Doctorow
+
+The Giver
+
+Lois Lowry
+
+Tuck Everlasting
+
+Natalie Babbit
+
+You read 384 pages!
+
+You read 179 pages!
+
+You read 144 pages!
+
+That code gives us three books that are similar - they all have the same types of properties and behavior, but also different. Sweet!
+
+Now, if you think about the world, cats and dogs are different types of objects, so you'd probably create different object types for them if you were programming a Cat and a Dog. A cat would meow(), a dog would bark(). But they're also similar- both a cat and dog would eat(), they both have an age, and a birth, and a death. They're both mammals, and that means they share a lot in common, even if they're also different.
+
+In that case, we want to use the idea of object inheritance. An object type could inherit properties and behavior from a parent object type, but then also have its own unique things about it. All the Cats and Dogs could inherit from Mammal, so that they wouldn't have to invent eat()ing from scratch. How would we do that in JavaScript?
+
+Let's go back to our book example, and say that Book is the "parent" object type, and we want to make two object types that inherit from it - Paperback and EBook.
+
+A paperback is like a book, but it has one main thing different, at least for our program: it has a cover image. So, our constructor needs to take four arguments, to take in that extra info:
+
+PaperBack
+
+cover
+
+Now, we don't want to have to do all the work that we already did in the Book constructor to remember those first three arguments - we want to take advantage of the fact that the code for that would be the same. So we can actually call the Book constructor from the PaperBack constructor, and pass in those arguments:
+
+We still need to store the cover property in the object though, so we need one more line to take care of that:
+
+Now, we have a constructor for our PaperBack, which helps it share the same properties as Books, but we also want our PaperBack to inherit its methods. Here's how we do that, by telling the program that the PaperBack prototype should be based on the Book prototype:
+
+We might also want to attach paperback-specific behavior, like being able to burn it, and we can do that by defining functions on the prototype, after that line above:
+
+Omg, you burnt all __ pages
+
+And now we can create a new paperback, read it all, and burn it!
+
+calvin
+
+The Essential Calvin & Hobbes
+
+Bill Watterson
+
+You read 256 pages!
+
+Omg, you burnt all 256 pages!
+
+(Well, we're not really going to burn it, because that's an amazing book, but perhaps if we were stuck in a glacial desert and desperate for warmth and about to die.)
+
+And now you can see how we can use object-oriented design principles in JavaScript to create more complex data for your programs and model your program worlds better.
+
+
+*
+Planning a programming project
+
+Becoming a programmer isn't just about learning the syntax and the concepts of a programming language: it's about figuring out how to use that knowledge to make programs. You've made a bunch of programs in this course, in the challenges and projects, but now you should come up with ideas for new programs - ideas that you're personally really excited about - and try to turn those into actual programs.
+
+You probably won't know everything you need for your program when you start it, and that's totally okay -- you'll be motivated to learn those new things because of how much you want to make your program real. Programmers are constantly learning new things for new projects, and that's part of why we love it so much.
+
+Let's step through the process of planning a programming project:
+
+1. What do you want to make?
+
+When I first started programming, I found myself constantly thinking of new programs to make and writing those down in a list. I was addicted to the power of creation, and there was so much my brain wanted to make. If you're like that, then you probably already have an idea of what you want to make, and perhaps you have your own list. 
+
+If you don't already have an idea, then here are some questions to help your brainstorming:
+
+What's your favorite game - arcade game, board game, sports game? Could you make a simplified, digital version of that? Could you mix it up a bit, like give it a different theme or main characters?
+
+What are your other favorite academic fields? If you love art, could you make an art-making program? If you love history, how about an interactive timeline? If you love science, how about a scientific simulation? 
+
+What's your favorite movie or TV show? Could you make a digital version of a scene or character from it? Maybe make a game based on it?
+
+What's a real-life gadget that you love? Could you make a simulation of it?
+
+Once you've picked an idea, you should write a description of it. For example, if I decided to make a clone of "Breakout", because that's my favorite retro arcade game, I might write:
+
+Breakout: a game where you control a paddle at the bottom of the screen, and you use it to hit a ball upwards and at angles to break bricks. The goal is to break all the bricks, and not let the ball through the ground too many times.
+
+You'll flesh that description out later, but for now, that gives you a good enough idea to keep going in the planning process.
+
+2. What technology will you use?
+
+In this step, you need to consider which technologies (languages/libraries/environments) you're familiar with or able to learn easily, and which of them are the most well suited for the job. For many of you, that list may be one item long, "1. JS+ProcessingJS", and that makes your decision easy.
+
+Our JS+ProcessingJS environment works great for making animations, games, visualizations, and simulations. Just check out the community programs to see the wide range of programs that people make here.
+
+Our environment doesn't work for other things like multi-player games, mobile apps, data-crunching applications. If you know other languages/environments (like JS+HTML, Python, SCRATCH, Swift, etc) and you're thinking of building something that doesn't make as much sense with ProcessingJS, then consider which of those technologies would be best suited for your program. If you want to build those things but don't know other technologies, you might want to come up with a new program idea. You can learn a new technology for a new project, but especially if you're just getting started in programming, it's a good idea to get really good at your first language first.
+
+If I decided to make a game like Breakout, I'd pick JS+ProcessingJS, since I already know that technology and it also works great for 2D games like that.
+
+3. What features will it include?
+
+This is where we get into the real planning, and where (I think) it gets fun. Your goal in this step is to figure out what you're actually making- what will it look like, what features it will include, what features it *won't* include.
+
+The first thing you can do is make "mock-ups"  - sketches that look like the thing you're making, but without details like coloring or exact sizing. You can make mock-ups on paper, or with online programs:
+
+To give you an idea of what mock-ups look like, I've included mock-ups below of my Breakout clone. I sketched each scene separately and drew arrows between them to show how one scene leads to another. Those arrows will help me understand what logic I need in my program to go between program states.
+
+Now you can use those mock-ups to help you make a feature list, where you think of every feature in your program, and make it into a list.
+
+For my Breakout clone, this could be my feature list, broken down by scene:
+
+Game scene	
+
+User-controlled paddle
+
+Multiple colored bricks
+
+Angled ball movement
+
+Collision detection
+
+Life display
+
+Score display
+
+Sound effects
+
+Main Scene	
+
+Play button
+
+Help button
+
+Help Scene	
+
+Text
+
+Back button
+
+Win Scene	
+
+Headline
+
+Fireworks animation
+
+Lose Scene	
+
+Text
+
+Restart button
+
+4. But what features must it include?
+
+If we all had infinite time to make all the programs in our heads, then they'd all include every feature in our list. But we don't, so in this step, you have to decide which features are the most important, and which features you'll do only if we have time. This will also help you figure out which order to implement features in, from most to least important.
+
+To help you figure out the importance of each feature, ask yourself these questions:
+
+If I shared this with a friend, which features would I want to make sure were working?
+
+Which features am I the most excited about building?
+
+Which features are the most unique to my program?
+
+Which features will I learn the most from implementing?
+
+Are there any features that seem too far beyond my current skill level? 
+
+Then, go through your feature list from the last step, and either order the list or add a rank to each feature. 
+
+For my Breakout clone feature list, I've put "P1", "P2", and "P3" next to the features, signifying top priority (P1), middle priority (P2), and lowest priority (P3). I decided to prioritize the unique game mechanics over general game features like scenes, because I find that the most exciting about this project:
+
+As a general tip for those of you making games, here are features that I'd recommend de-prioritizing: menus, multiple levels, 3D graphics. Focus on what's unique and fun about your game, then add those extras.
+
+You can also turn your prioritized list into project versions, so you can easily see what you need to implement in each versions, and you can always stop after a particular version and be happy with what you've made.
+
+Here's what the versions would look like for my Breakout clone:  
+
+User-controlled paddle
+
+Multiple colored bricks
+
+Angled ball movement
+
+Collision detection
+	
+Life display
+
+Score display
+
+Start scene with play button
+
+Win scene with headline
+
+Sound effects
+
+Help button
+
+Fireworks
+
+Lose scene with Restart button
+
+5. How will you implement it?
+
+You now have an idea of what features you'll be building first in your program - but if you start now, you'll be staring at a completely blank program with no code written, and that can be intimidating. Which variables should you write first? Which functions?
+
+One way you can figure that out is to think about the "high level architecture" of your program - breaking it into categories like "objects", "logic", "user interaction", "user data", and "scenes" - and then think about how you might implement them, like as object-oriented object types, functions, or variables.
+
+For example, here's an architecture for my Breakout clone:
+
+Objects	
+
+Brick 
+
+isHit
+
+Paddle
+
+move
+
+Ball
+
+Scenes	
+
+Start
+
+Game
+
+End
+
+Logic
+
+Ball-brick collision
+
+function
+
+use bounding box
+
+Paddle-ball angling
+
+invert angle
+
+User interaction
+
+Keyboard-paddle movement
+
+keyPressed
+
+Buttons for scene changes
+
+mouseClicked
+
+User data
+
+Ball deaths
+
+array
+
+Ball hits
+
+Once you've thought about the high-level architecture, it should become more clear what you can start coding first. 
+
+You might decide to write your whole program in pseudo-code first, which we talk about later in this tutorial. Basically, it'd mean writing the whole program in plain English text inside a comment, and then slowly turning that into actual code.
+
+6. What's your timeline?
+
+How much time do you have to make this program? How many weeks, and how much time each day? What features will you write each week? Your goal in this step is to figure out a timeline for your project - which is particularly important if you have a deadline, but also useful so you start to understand how much time it takes you to write a program.
+
+Here's a timeline for my Breakout clone, assuming 2-4 hours of work each week:
+
+Week 1: Design and pseudo-code
+
+Week 2: Rough visuals
+
+Week 3: Ball moving/collision mechanics
+
+Week 4: Scoring mechanics
+
+Week 5: Scenes (Start/Win/Lose)
+
+Week 6: Polish, Manual tests (QA), Prep for demo
+
+Figuring out timelines for programming projects is hard. Some things that seem easy take way longer than you expect (like some weird bug that you spend hours debugging), some things that seem hard take  less time than you expect. As a general rule, assume it will take you longer than you think, and adjust as you go along.
+
+Are you ready!?
+
+Hopefully this gives you an idea for the process of planning a programming project, and inspires you to start a project now. Depending on what you want to build, you might also decide to go through other courses first, like Advanced JS: Games & Visualizations or Advanced JS: Natural Simulations, to give you more ideas for building games and simulations. 
+
+The important thing is to make sure you start making your own programs at some point, because that is where you'll learn the most, and also where you'll get the most joy out of programming, because you're making your dreams into reality.
+
